@@ -1,76 +1,57 @@
 extends KinematicBody2D
 
-onready var AnimatedSprite = $AnimatedSprite
 
-var isIncombo = false
+# Float
+var timeTillNextInput = 0.2
+var time = timeTillNextInput
 
-var timeTillNextInput = 0.5
-var time = 0
+# Integer
 
-var currentAttack = 0
-var previousAttack = 0
+# Boolean
+var wasInputMade = false
+var isCrouch = false
 
-onready var ColliderScript = $Colliders
+# Array
+var usedKeys = []
+
+# Vector
+
+# Object
+onready var playerAnimSprite = $AnimatedSprite.get("parameters/playback")
+
+# Refrences
+var generalMoveSetAnims = MoveSetManager.nameDictionary["General"]
+var specificMoveSetAnims = MoveSetManager.nameDictionary
 
 func _ready():
-	time = timeTillNextInput
+	pass
 
-
-func _process(_delta):
-	if(Input.is_action_just_pressed("ui_punch")):
-		if(currentAttack == 0):
-			_Reset_Previous_Attack(previousAttack)
-			previousAttack = 3
+func _input(event):
+# If there is an Input made, signal it only once
+	if event is InputEventKey:
+		if event.pressed and not event.echo:
 			
-			ColliderScript.p1FightColl[3].position += Vector2(25,0)
-			ColliderScript._Handle_Specific_Collider_Disabling(false, 3)
-			AnimatedSprite.play("Light punch")
-		elif(currentAttack == 1):
-			_Reset_Previous_Attack(previousAttack)
-			previousAttack = 3
+			# Make a new tmep variable to store our input in
+			var character = OS.get_scancode_string(event.scancode)
 			
-			ColliderScript.p1FightColl[3].position += Vector2(5,-27)
-			ColliderScript._Handle_Specific_Collider_Disabling(false, 3)
-			AnimatedSprite.play("Medium Punch")
-		elif(currentAttack == 2):
-			_Reset_Previous_Attack(previousAttack)
-			previousAttack = 3
-			
-			ColliderScript.p1FightColl[3].position += Vector2(75, -13)
-			ColliderScript._Handle_Specific_Collider_Disabling(false, 3)
-			AnimatedSprite.play("Light Kick")
+			# Check if the input made is also allowed to be used
+			if "WASDLP".find(character) >= 0:
+				wasInputMade = true
+				time = timeTillNextInput
+				usedKeys.append(character)
 
-	if(Input.is_action_just_pressed("ui_left")):
-		if(currentAttack == 0):
-			_Reset_Previous_Attack(previousAttack)
-			previousAttack = 3
-			
-			ColliderScript.p1FightColl[3].position += Vector2(25,0)
-			ColliderScript._Handle_Specific_Collider_Disabling(false, 3)
-			AnimatedSprite.play("WalkBackward")
-	if(Input.is_action_just_pressed("ui_right")):
-		if(currentAttack == 0):
-			AnimatedSprite.play("WalkForward")
+func _process(delta):
+	pass
 
-		isIncombo = true
-		currentAttack += 1
-		_Reset_Attack_Timer()
+func _send_combo_attempt(var attempt = [])
+	pass
 
-		if(isIncombo):
-			time -= _delta
-		
-		if(time < 0):
-			time = timeTillNextInput
-			isIncombo = false
-			currentAttack = 0
-			_Reset_Previous_Attack(previousAttack)
-			
-			AnimatedSprite.play("Idle")
 
-func _Reset_Attack_Timer():
-	if(currentAttack < 4):
-		time = timeTillNextInput
 
-func _Reset_Previous_Attack(var previousAttackID):
-	ColliderScript.p1FightColl[previousAttackID].position = Vector2(0,0)
-	ColliderScript._Handle_Specific_Collider_Disabling(true, previousAttackID)
+
+
+
+
+
+
+
