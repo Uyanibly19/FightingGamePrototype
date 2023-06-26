@@ -102,18 +102,15 @@ extents = Vector2( 13, 10 )
 [node name="Player" type="KinematicBody2D"]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2( 488, 256 )
 shape = SubResource( 1 )
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="."]
-position = Vector2( 488, 255.218 )
 scale = Vector2( 1, 0.995553 )
 frames = SubResource( 2 )
 animation = "Idle"
 frame = 5
 
 [node name="Colliders" type="Node2D" parent="."]
-position = Vector2( 488, 256 )
 
 [node name="Hand Colliders" type="Node2D" parent="Colliders"]
 
@@ -122,14 +119,12 @@ position = Vector2( 488, 256 )
 [node name="LeftHandColl" type="CollisionShape2D" parent="Colliders/Hand Colliders/LeftHand" groups=["P1 Hand Foot Coll"]]
 modulate = Color( 0.909804, 0.713726, 0.160784, 1 )
 show_behind_parent = true
-position = Vector2( 0, -24 )
 shape = SubResource( 3 )
 
 [node name="RightHand" type="Area2D" parent="Colliders/Hand Colliders"]
 
 [node name="RightHandColl" type="CollisionShape2D" parent="Colliders/Hand Colliders/RightHand" groups=["P1 Hand Foot Coll"]]
 self_modulate = Color( 0, 0.203125, 1, 1 )
-position = Vector2( 16, -8 )
 shape = SubResource( 4 )
 
 [node name="Foot Colliders" type="Node2D" parent="Colliders"]
@@ -138,12 +133,10 @@ shape = SubResource( 4 )
 
 [node name="LeftFeetColl" type="CollisionShape2D" parent="Colliders/Foot Colliders/LeftFeet" groups=["P1 Hand Foot Coll"]]
 modulate = Color( 0, 0, 0, 1 )
-position = Vector2( 29.5, 48 )
 shape = SubResource( 5 )
 
 [node name="RightFeet" type="Area2D" parent="Colliders/Foot Colliders"]
 
 [node name="RightFeetColl" type="CollisionShape2D" parent="Colliders/Foot Colliders/RightFeet" groups=["P1 Hand Foot Coll"]]
 modulate = Color( 0.137255, 1, 0, 1 )
-position = Vector2( -27, 48 )
 shape = SubResource( 6 )
