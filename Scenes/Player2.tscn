@@ -1,0 +1,148 @@
+[gd_scene load_steps=59 format=2]
+
+[ext_resource path="res://Ryu Sprites/Ryu Walk Backward/a2059362e57345eaec64321a17c621c5GyllOSWgMrHFm43T-0.png" type="Texture" id=1]
+[ext_resource path="res://Ryu Sprites/Ryu Walk Forward/7363f5e3ceb64333d352ff047b113aaaaeF9MEXu2qLoheh2-0.png" type="Texture" id=2]
+[ext_resource path="res://Ryu Sprites/Ryu Walk Backward/a2059362e57345eaec64321a17c621c5GyllOSWgMrHFm43T-5.png" type="Texture" id=3]
+[ext_resource path="res://Ryu Sprites/Ryu Walk Backward/a2059362e57345eaec64321a17c621c5GyllOSWgMrHFm43T-10.png" type="Texture" id=4]
+[ext_resource path="res://Ryu Sprites/Ryu Walk Forward/7363f5e3ceb64333d352ff047b113aaaaeF9MEXu2qLoheh2-2.png" type="Texture" id=5]
+[ext_resource path="res://Ryu Sprites/Ryu MP/d3f953284ad44d60aa4176d4ee046cbbCUuqLOJ7kJ2obzIy-7.png" type="Texture" id=6]
+[ext_resource path="res://Ryu Sprites/Ryu Walk Forward/7363f5e3ceb64333d352ff047b113aaaaeF9MEXu2qLoheh2-3.png" type="Texture" id=7]
+[ext_resource path="res://Ryu Sprites/Ryu Walk Forward/7363f5e3ceb64333d352ff047b113aaaaeF9MEXu2qLoheh2-9.png" type="Texture" id=8]
+[ext_resource path="res://Ryu Sprites/Ryu Walk Backward/a2059362e57345eaec64321a17c621c5GyllOSWgMrHFm43T-6.png" type="Texture" id=9]
+[ext_resource path="res://Ryu Sprites/Ryu Walk Forward/7363f5e3ceb64333d352ff047b113aaaaeF9MEXu2qLoheh2-7.png" type="Texture" id=10]
+[ext_resource path="res://Ryu Sprites/Ryu Walk Backward/a2059362e57345eaec64321a17c621c5GyllOSWgMrHFm43T-7.png" type="Texture" id=11]
+[ext_resource path="res://Ryu Sprites/Ryu Walk Forward/7363f5e3ceb64333d352ff047b113aaaaeF9MEXu2qLoheh2-6.png" type="Texture" id=12]
+[ext_resource path="res://Ryu Sprites/Ryu Walk Backward/a2059362e57345eaec64321a17c621c5GyllOSWgMrHFm43T-2.png" type="Texture" id=13]
+[ext_resource path="res://Ryu Sprites/Ryu Walk Forward/7363f5e3ceb64333d352ff047b113aaaaeF9MEXu2qLoheh2-1.png" type="Texture" id=14]
+[ext_resource path="res://Ryu Sprites/Ryu Walk Forward/7363f5e3ceb64333d352ff047b113aaaaeF9MEXu2qLoheh2-4.png" type="Texture" id=15]
+[ext_resource path="res://Ryu Sprites/Ryu Walk Backward/a2059362e57345eaec64321a17c621c5GyllOSWgMrHFm43T-1.png" type="Texture" id=16]
+[ext_resource path="res://Ryu Sprites/Ryu Walk Forward/7363f5e3ceb64333d352ff047b113aaaaeF9MEXu2qLoheh2-5.png" type="Texture" id=17]
+[ext_resource path="res://Ryu Sprites/Ryu Walk Backward/a2059362e57345eaec64321a17c621c5GyllOSWgMrHFm43T-3.png" type="Texture" id=18]
+[ext_resource path="res://Ryu Sprites/Ryu Walk Backward/a2059362e57345eaec64321a17c621c5GyllOSWgMrHFm43T-9.png" type="Texture" id=19]
+[ext_resource path="res://Ryu Sprites/Ryu Walk Forward/7363f5e3ceb64333d352ff047b113aaaaeF9MEXu2qLoheh2-10.png" type="Texture" id=20]
+[ext_resource path="res://Ryu Sprites/Ryu Walk Backward/a2059362e57345eaec64321a17c621c5GyllOSWgMrHFm43T-8.png" type="Texture" id=21]
+[ext_resource path="res://Ryu Sprites/Ryu Walk Forward/7363f5e3ceb64333d352ff047b113aaaaeF9MEXu2qLoheh2-8.png" type="Texture" id=22]
+[ext_resource path="res://Ryu Sprites/Ryu Walk Backward/a2059362e57345eaec64321a17c621c5GyllOSWgMrHFm43T-4.png" type="Texture" id=23]
+[ext_resource path="res://Ryu Sprites/Ryu MP/d3f953284ad44d60aa4176d4ee046cbbCUuqLOJ7kJ2obzIy-4.png" type="Texture" id=24]
+[ext_resource path="res://Ryu Sprites/Ryu MP/d3f953284ad44d60aa4176d4ee046cbbCUuqLOJ7kJ2obzIy-5.png" type="Texture" id=25]
+[ext_resource path="res://Ryu Sprites/Ryu MP/d3f953284ad44d60aa4176d4ee046cbbCUuqLOJ7kJ2obzIy-3.png" type="Texture" id=26]
+[ext_resource path="res://Ryu Sprites/Ryu MP/d3f953284ad44d60aa4176d4ee046cbbCUuqLOJ7kJ2obzIy-6.png" type="Texture" id=27]
+[ext_resource path="res://Ryu Sprites/Ryu LK/6786fa01f01743689eb1ef8c87c7cc6bHis38Khj0O1N1boH-5.png" type="Texture" id=28]
+[ext_resource path="res://Ryu Sprites/Ryu LP/e76628c8de2042d49858c309c6f2bffcb8xF8f9Y2EGowtze-4.png" type="Texture" id=29]
+[ext_resource path="res://Ryu Sprites/Ryu MP/d3f953284ad44d60aa4176d4ee046cbbCUuqLOJ7kJ2obzIy-0.png" type="Texture" id=30]
+[ext_resource path="res://Ryu Sprites/Ryu MP/d3f953284ad44d60aa4176d4ee046cbbCUuqLOJ7kJ2obzIy-2.png" type="Texture" id=31]
+[ext_resource path="res://Ryu Sprites/Ryu Idle/a0f7e22ce317427ef401c7b1816b0e03UIpGSNDWRq9OMPPm-3.png" type="Texture" id=32]
+[ext_resource path="res://Ryu Sprites/Ryu Idle/a0f7e22ce317427ef401c7b1816b0e03UIpGSNDWRq9OMPPm-9.png" type="Texture" id=33]
+[ext_resource path="res://Ryu Sprites/Ryu Idle/a0f7e22ce317427ef401c7b1816b0e03UIpGSNDWRq9OMPPm-0.png" type="Texture" id=34]
+[ext_resource path="res://Ryu Sprites/Ryu LK/6786fa01f01743689eb1ef8c87c7cc6bHis38Khj0O1N1boH-2.png" type="Texture" id=35]
+[ext_resource path="res://Ryu Sprites/Ryu LK/6786fa01f01743689eb1ef8c87c7cc6bHis38Khj0O1N1boH-4.png" type="Texture" id=36]
+[ext_resource path="res://Ryu Sprites/Ryu LP/e76628c8de2042d49858c309c6f2bffcb8xF8f9Y2EGowtze-1.png" type="Texture" id=37]
+[ext_resource path="res://Ryu Sprites/Ryu Idle/a0f7e22ce317427ef401c7b1816b0e03UIpGSNDWRq9OMPPm-8.png" type="Texture" id=38]
+[ext_resource path="res://Ryu Sprites/Ryu LP/e76628c8de2042d49858c309c6f2bffcb8xF8f9Y2EGowtze-2.png" type="Texture" id=39]
+[ext_resource path="res://Ryu Sprites/Ryu LP/e76628c8de2042d49858c309c6f2bffcb8xF8f9Y2EGowtze-0.png" type="Texture" id=40]
+[ext_resource path="res://Ryu Sprites/Ryu MP/d3f953284ad44d60aa4176d4ee046cbbCUuqLOJ7kJ2obzIy-1.png" type="Texture" id=41]
+[ext_resource path="res://Ryu Sprites/Ryu LK/6786fa01f01743689eb1ef8c87c7cc6bHis38Khj0O1N1boH-3.png" type="Texture" id=42]
+[ext_resource path="res://Ryu Sprites/Ryu LP/e76628c8de2042d49858c309c6f2bffcb8xF8f9Y2EGowtze-3.png" type="Texture" id=43]
+[ext_resource path="res://Ryu Sprites/Ryu Idle/a0f7e22ce317427ef401c7b1816b0e03UIpGSNDWRq9OMPPm-2.png" type="Texture" id=44]
+[ext_resource path="res://Ryu Sprites/Ryu Idle/a0f7e22ce317427ef401c7b1816b0e03UIpGSNDWRq9OMPPm-1.png" type="Texture" id=45]
+[ext_resource path="res://Ryu Sprites/Ryu Idle/a0f7e22ce317427ef401c7b1816b0e03UIpGSNDWRq9OMPPm-4.png" type="Texture" id=46]
+[ext_resource path="res://Ryu Sprites/Ryu Idle/a0f7e22ce317427ef401c7b1816b0e03UIpGSNDWRq9OMPPm-5.png" type="Texture" id=47]
+[ext_resource path="res://Ryu Sprites/Ryu Idle/a0f7e22ce317427ef401c7b1816b0e03UIpGSNDWRq9OMPPm-6.png" type="Texture" id=48]
+[ext_resource path="res://Ryu Sprites/Ryu Idle/a0f7e22ce317427ef401c7b1816b0e03UIpGSNDWRq9OMPPm-7.png" type="Texture" id=49]
+[ext_resource path="res://Ryu Sprites/Ryu LK/6786fa01f01743689eb1ef8c87c7cc6bHis38Khj0O1N1boH-0.png" type="Texture" id=50]
+[ext_resource path="res://Ryu Sprites/Ryu LK/6786fa01f01743689eb1ef8c87c7cc6bHis38Khj0O1N1boH-1.png" type="Texture" id=51]
+[ext_resource path="res://Scripts/Player2Movement.gd" type="Script" id=52]
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 24, 48 )
+
+[sub_resource type="SpriteFrames" id=2]
+animations = [ {
+"frames": [ ExtResource( 34 ), ExtResource( 45 ), ExtResource( 44 ), ExtResource( 32 ), ExtResource( 46 ), ExtResource( 47 ), ExtResource( 48 ), ExtResource( 49 ), ExtResource( 38 ), ExtResource( 33 ) ],
+"loop": true,
+"name": "Idle",
+"speed": 20.0
+}, {
+"frames": [ ExtResource( 50 ), ExtResource( 51 ), ExtResource( 35 ), ExtResource( 42 ), ExtResource( 36 ), ExtResource( 28 ) ],
+"loop": false,
+"name": "Light Kick",
+"speed": 20.0
+}, {
+"frames": [ ExtResource( 40 ), ExtResource( 37 ), ExtResource( 39 ), ExtResource( 43 ), ExtResource( 29 ) ],
+"loop": false,
+"name": "Light Punch",
+"speed": 20.0
+}, {
+"frames": [ ExtResource( 30 ), ExtResource( 41 ), ExtResource( 31 ), ExtResource( 26 ), ExtResource( 24 ), ExtResource( 25 ), ExtResource( 27 ), ExtResource( 6 ) ],
+"loop": false,
+"name": "Medium Punch",
+"speed": 17.0
+}, {
+"frames": [ ExtResource( 1 ), ExtResource( 16 ), ExtResource( 13 ), ExtResource( 18 ), ExtResource( 23 ), ExtResource( 3 ), ExtResource( 9 ), ExtResource( 11 ), ExtResource( 21 ), ExtResource( 19 ), ExtResource( 4 ) ],
+"loop": true,
+"name": "Walk Backward",
+"speed": 18.0
+}, {
+"frames": [ ExtResource( 2 ), ExtResource( 14 ), ExtResource( 5 ), ExtResource( 7 ), ExtResource( 15 ), ExtResource( 17 ), ExtResource( 12 ), ExtResource( 10 ), ExtResource( 22 ), ExtResource( 8 ), ExtResource( 20 ) ],
+"loop": true,
+"name": "Walk Forward",
+"speed": 18.0
+} ]
+
+[sub_resource type="RectangleShape2D" id=3]
+
+[sub_resource type="RectangleShape2D" id=4]
+extents = Vector2( 9, 9 )
+
+[sub_resource type="RectangleShape2D" id=5]
+extents = Vector2( 13, 10 )
+
+[sub_resource type="RectangleShape2D" id=6]
+extents = Vector2( 13, 10 )
+
+[node name="KinematicBody2D" type="KinematicBody2D"]
+script = ExtResource( 52 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+modulate = Color( 0.556863, 0.0666667, 0.0666667, 1 )
+position = Vector2( 256, 184 )
+shape = SubResource( 1 )
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="."]
+position = Vector2( 256, 184 )
+frames = SubResource( 2 )
+animation = "Idle"
+frame = 8
+flip_h = true
+
+[node name="Colliders" type="Node2D" parent="."]
+
+[node name="Hand Colliders" type="Node2D" parent="Colliders"]
+
+[node name="Left Hand" type="Area2D" parent="Colliders/Hand Colliders"]
+
+[node name="LefthandColl" type="CollisionShape2D" parent="Colliders/Hand Colliders/Left Hand"]
+modulate = Color( 0.0509804, 0.403922, 0.898039, 1 )
+position = Vector2( 240, 168 )
+shape = SubResource( 3 )
+
+[node name="Right Hand" type="Area2D" parent="Colliders/Hand Colliders"]
+
+[node name="RightHandColl" type="CollisionShape2D" parent="Colliders/Hand Colliders/Right Hand"]
+position = Vector2( 256, 152 )
+shape = SubResource( 4 )
+
+[node name="Foot Colliders" type="Node2D" parent="Colliders"]
+
+[node name="Left Foot" type="Area2D" parent="Colliders/Foot Colliders"]
+
+[node name="LeftFootColl" type="CollisionShape2D" parent="Colliders/Foot Colliders/Left Foot"]
+position = Vector2( 227, 232 )
+shape = SubResource( 5 )
+
+[node name="Right Foot" type="Area2D" parent="Colliders/Foot Colliders"]
+position = Vector2( 304, 232 )
+
+[node name="RightFootColl" type="CollisionShape2D" parent="Colliders/Foot Colliders/Right Foot"]
+position = Vector2( -19, 0 )
+shape = SubResource( 6 )

@@ -36,7 +36,7 @@ func _physics_process(delta: float) -> void:
 func _ready():
 	time = timeTillNextInput
 
-func _process(delta):
+func _process(_delta):
 	if(Input.is_action_just_pressed("LP")):
 		if(currentAttack == 0):
 			animatedSprite.play("Light punch") 
@@ -51,13 +51,13 @@ func _process(delta):
 			animatedSprite.play("WalkBackward")
 	if(Input.is_action_pressed("MP")):
 		if(currentAttack == 0):
-			animatedSprite.play("Medium Punch")
+			animatedSprite.play("Medium punch")
 	if Input.is_action_just_pressed("MP"):
 		if(currentAttack == 0):
 			animatedSprite.play("Idle")
 	if(Input.is_action_just_pressed("LK")):
 		if(currentAttack == 0):
-			animatedSprite.play("Light Kick")
+			animatedSprite.play("Light kick")
 	if(Input.is_action_just_released("LK")):
 		if(currentAttack == 0):
 			animatedSprite.play("Idle")
