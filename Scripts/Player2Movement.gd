@@ -31,33 +31,59 @@ func _physics_process(delta: float) -> void:
 	_velocity.x = _horizontal_direction * speed
 	_velocity.y += gravity * delta
 	
+	var is_falling := _velocity.y > 0.0 and not is_on_floor()
+	var is_jumping := Input.is_action_just_pressed("p2up") and is_on_floor()
+	var is_idling := is_on_floor() and is_zero_approx(_velocity.x)
+	var is_running := is_on_floor() and not is_zero_approx(_velocity.x)
+	
+	if is_jumping:
+		_jumps_made += 0
+		_velocity.y = -jumpstrength
 	_velocity = move_and_slide(_velocity, UP_DIRECTION) 
 
 func _ready():
 	time = timeTillNextInput
 
 func _process(delta):
-	if(Input.is_action_just_pressed("p2LP")):
+	if(Input.is_action_pressed("p2LP")):
 		if(currentAttack == 0):
 			animatedSprite.play("Light Punch") 
 	if(Input.is_action_just_released("p2LP")):
 		if(currentAttack == 0):
 			animatedSprite.play("Idle")
-	if(Input.is_action_just_pressed("p2right")):
-		if(currentAttack == 0):
-			animatedSprite.play("Walk Forward")
-	if(Input.is_action_just_pressed("p2left")):
+	if(Input.is_action_pressed("p2right")):
 		if(currentAttack == 0):
 			animatedSprite.play("Walk Backward")
+	if(Input.is_action_just_released("p2right")):
+		if(currentAttack == 0):
+			animatedSprite.play("Idle")
+	if(Input.is_action_pressed("p2left")):
+		if(currentAttack == 0):
+			animatedSprite.play("Walk Forward")
+	if(Input.is_action_just_released("p2left")):
+		if(currentAttack == 0):
+			animatedSprite.play("Idle")
 	if(Input.is_action_pressed("p2MP")):
 		if(currentAttack == 0):
 			animatedSprite.play("Medium Punch")
-	if Input.is_action_just_pressed("p2MP"):
+	if Input.is_action_just_released("p2MP"):
 		if(currentAttack == 0):
 			animatedSprite.play("Idle")
-	if(Input.is_action_just_pressed("p2LK")):
+	if(Input.is_action_pressed("p2LK")):
 		if(currentAttack == 0):
 			animatedSprite.play("Light Kick")
 	if(Input.is_action_just_released("p2LK")):
 		if(currentAttack == 0):
+			animatedSprite.play("Idle")
+	if(Input.is_action_pressed("p2up")):
+		if(currentAttack == 0):
+			animatedSprite.play("Jump")
+	if(Input.is_action_just_released("p2up")):
+		if(currentAttack == 0):
+			animatedSprite.play("Idle")
+	if(Input.is_action_pressed("p2down")):
+		if(currentAttack == 0):
+			animatedSprite.play("Ryu Crouch")
+	if (Input.is_action_just_released("p2down")):
+		if(currentAttack == 0 ):
 			animatedSprite.play("Idle")

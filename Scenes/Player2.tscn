@@ -1,4 +1,4 @@
-[gd_scene load_steps=59 format=2]
+[gd_scene load_steps=134 format=2]
 
 [ext_resource path="res://Ryu Sprites/Ryu Walk Backward/a2059362e57345eaec64321a17c621c5GyllOSWgMrHFm43T-0.png" type="Texture" id=1]
 [ext_resource path="res://Ryu Sprites/Ryu Walk Forward/7363f5e3ceb64333d352ff047b113aaaaeF9MEXu2qLoheh2-0.png" type="Texture" id=2]
@@ -52,6 +52,81 @@
 [ext_resource path="res://Ryu Sprites/Ryu LK/6786fa01f01743689eb1ef8c87c7cc6bHis38Khj0O1N1boH-0.png" type="Texture" id=50]
 [ext_resource path="res://Ryu Sprites/Ryu LK/6786fa01f01743689eb1ef8c87c7cc6bHis38Khj0O1N1boH-1.png" type="Texture" id=51]
 [ext_resource path="res://Scripts/Player2Movement.gd" type="Script" id=52]
+[ext_resource path="res://Ryu Sprites/RyuJump/32f8012c59fa496eadcbb1b1d6cc98e6NQkFqZfbHcauBm1r-0.png" type="Texture" id=53]
+[ext_resource path="res://Ryu Sprites/RyuJump/32f8012c59fa496eadcbb1b1d6cc98e6NQkFqZfbHcauBm1r-7.png" type="Texture" id=54]
+[ext_resource path="res://Ryu Sprites/RyuJump/32f8012c59fa496eadcbb1b1d6cc98e6NQkFqZfbHcauBm1r-11.png" type="Texture" id=55]
+[ext_resource path="res://Ryu Sprites/RyuJump/32f8012c59fa496eadcbb1b1d6cc98e6NQkFqZfbHcauBm1r-12.png" type="Texture" id=56]
+[ext_resource path="res://Ryu Sprites/RyuJump/32f8012c59fa496eadcbb1b1d6cc98e6NQkFqZfbHcauBm1r-14.png" type="Texture" id=57]
+[ext_resource path="res://Ryu Sprites/RyuJumpB/554b89de5e134cb1a54e61b737d70796NTulV2JlclxKvd04-1.png" type="Texture" id=58]
+[ext_resource path="res://Ryu Sprites/RyuJump/32f8012c59fa496eadcbb1b1d6cc98e6NQkFqZfbHcauBm1r-6.png" type="Texture" id=59]
+[ext_resource path="res://Ryu Sprites/RyuJumpB/554b89de5e134cb1a54e61b737d70796NTulV2JlclxKvd04-7.png" type="Texture" id=60]
+[ext_resource path="res://Ryu Sprites/RyuJumpB/554b89de5e134cb1a54e61b737d70796NTulV2JlclxKvd04-0.png" type="Texture" id=61]
+[ext_resource path="res://Ryu Sprites/RyuJumpB/554b89de5e134cb1a54e61b737d70796NTulV2JlclxKvd04-11.png" type="Texture" id=62]
+[ext_resource path="res://Ryu Sprites/RyuJump/32f8012c59fa496eadcbb1b1d6cc98e6NQkFqZfbHcauBm1r-2.png" type="Texture" id=63]
+[ext_resource path="res://Ryu Sprites/RyuJump/32f8012c59fa496eadcbb1b1d6cc98e6NQkFqZfbHcauBm1r-3.png" type="Texture" id=64]
+[ext_resource path="res://Ryu Sprites/RyuJump/32f8012c59fa496eadcbb1b1d6cc98e6NQkFqZfbHcauBm1r-9.png" type="Texture" id=65]
+[ext_resource path="res://Ryu Sprites/RyuJump/32f8012c59fa496eadcbb1b1d6cc98e6NQkFqZfbHcauBm1r-10.png" type="Texture" id=66]
+[ext_resource path="res://Ryu Sprites/RyuJump/32f8012c59fa496eadcbb1b1d6cc98e6NQkFqZfbHcauBm1r-4.png" type="Texture" id=67]
+[ext_resource path="res://Ryu Sprites/RyuJumpB/554b89de5e134cb1a54e61b737d70796NTulV2JlclxKvd04-12.png" type="Texture" id=68]
+[ext_resource path="res://Ryu Sprites/RyuJumpB/554b89de5e134cb1a54e61b737d70796NTulV2JlclxKvd04-13.png" type="Texture" id=69]
+[ext_resource path="res://Ryu Sprites/RyuJumpB/554b89de5e134cb1a54e61b737d70796NTulV2JlclxKvd04-14.png" type="Texture" id=70]
+[ext_resource path="res://Ryu Sprites/RyuJump/32f8012c59fa496eadcbb1b1d6cc98e6NQkFqZfbHcauBm1r-16.png" type="Texture" id=71]
+[ext_resource path="res://Ryu Sprites/RyuJumpB/554b89de5e134cb1a54e61b737d70796NTulV2JlclxKvd04-15.png" type="Texture" id=72]
+[ext_resource path="res://Ryu Sprites/RyuJumpB/554b89de5e134cb1a54e61b737d70796NTulV2JlclxKvd04-9.png" type="Texture" id=73]
+[ext_resource path="res://Ryu Sprites/RyuJumpB/554b89de5e134cb1a54e61b737d70796NTulV2JlclxKvd04-10.png" type="Texture" id=74]
+[ext_resource path="res://Ryu Sprites/RyuJumpB/554b89de5e134cb1a54e61b737d70796NTulV2JlclxKvd04-4.png" type="Texture" id=75]
+[ext_resource path="res://Ryu Sprites/RyuJump/32f8012c59fa496eadcbb1b1d6cc98e6NQkFqZfbHcauBm1r-17.png" type="Texture" id=76]
+[ext_resource path="res://Ryu Sprites/RyuJump/32f8012c59fa496eadcbb1b1d6cc98e6NQkFqZfbHcauBm1r-19.png" type="Texture" id=77]
+[ext_resource path="res://Ryu Sprites/RyuJumpB/554b89de5e134cb1a54e61b737d70796NTulV2JlclxKvd04-2.png" type="Texture" id=78]
+[ext_resource path="res://Ryu Sprites/RyuJump/32f8012c59fa496eadcbb1b1d6cc98e6NQkFqZfbHcauBm1r-1.png" type="Texture" id=79]
+[ext_resource path="res://Ryu Sprites/RyuJump/32f8012c59fa496eadcbb1b1d6cc98e6NQkFqZfbHcauBm1r-15.png" type="Texture" id=80]
+[ext_resource path="res://Ryu Sprites/RyuJump/32f8012c59fa496eadcbb1b1d6cc98e6NQkFqZfbHcauBm1r-18.png" type="Texture" id=81]
+[ext_resource path="res://Ryu Sprites/RyuJump/32f8012c59fa496eadcbb1b1d6cc98e6NQkFqZfbHcauBm1r-13.png" type="Texture" id=82]
+[ext_resource path="res://Ryu Sprites/RyuJumpB/554b89de5e134cb1a54e61b737d70796NTulV2JlclxKvd04-3.png" type="Texture" id=83]
+[ext_resource path="res://Ryu Sprites/RyuJumpB/554b89de5e134cb1a54e61b737d70796NTulV2JlclxKvd04-5.png" type="Texture" id=84]
+[ext_resource path="res://Ryu Sprites/RyuJump/32f8012c59fa496eadcbb1b1d6cc98e6NQkFqZfbHcauBm1r-5.png" type="Texture" id=85]
+[ext_resource path="res://Ryu Sprites/RyuJumpB/554b89de5e134cb1a54e61b737d70796NTulV2JlclxKvd04-6.png" type="Texture" id=86]
+[ext_resource path="res://Ryu Sprites/RyuJumpB/554b89de5e134cb1a54e61b737d70796NTulV2JlclxKvd04-8.png" type="Texture" id=87]
+[ext_resource path="res://Ryu Sprites/RyuJump/32f8012c59fa496eadcbb1b1d6cc98e6NQkFqZfbHcauBm1r-8.png" type="Texture" id=88]
+[ext_resource path="res://Ryu Sprites/RyuJumpF/79f147d78b8e4bcbb755db12c19ecda6RrpYkcXXLdhEoaSx-13.png" type="Texture" id=89]
+[ext_resource path="res://Ryu Sprites/RyuJumpB/554b89de5e134cb1a54e61b737d70796NTulV2JlclxKvd04-20.png" type="Texture" id=90]
+[ext_resource path="res://Ryu Sprites/RyuJumpB/554b89de5e134cb1a54e61b737d70796NTulV2JlclxKvd04-21.png" type="Texture" id=91]
+[ext_resource path="res://Ryu Sprites/RyuJumpF/79f147d78b8e4bcbb755db12c19ecda6RrpYkcXXLdhEoaSx-7.png" type="Texture" id=92]
+[ext_resource path="res://Ryu Sprites/RyuJumpF/79f147d78b8e4bcbb755db12c19ecda6RrpYkcXXLdhEoaSx-8.png" type="Texture" id=93]
+[ext_resource path="res://Ryu Sprites/RyuJumpF/79f147d78b8e4bcbb755db12c19ecda6RrpYkcXXLdhEoaSx-0.png" type="Texture" id=94]
+[ext_resource path="res://Ryu Sprites/RyuJumpF/79f147d78b8e4bcbb755db12c19ecda6RrpYkcXXLdhEoaSx-18.png" type="Texture" id=95]
+[ext_resource path="res://Ryu Sprites/RyuJumpB/554b89de5e134cb1a54e61b737d70796NTulV2JlclxKvd04-16.png" type="Texture" id=96]
+[ext_resource path="res://Ryu Sprites/RyuJumpF/79f147d78b8e4bcbb755db12c19ecda6RrpYkcXXLdhEoaSx-4.png" type="Texture" id=97]
+[ext_resource path="res://Ryu Sprites/RyuJumpB/554b89de5e134cb1a54e61b737d70796NTulV2JlclxKvd04-18.png" type="Texture" id=98]
+[ext_resource path="res://Ryu Sprites/RyuJumpF/79f147d78b8e4bcbb755db12c19ecda6RrpYkcXXLdhEoaSx-1.png" type="Texture" id=99]
+[ext_resource path="res://Ryu Sprites/RyuJumpF/79f147d78b8e4bcbb755db12c19ecda6RrpYkcXXLdhEoaSx-11.png" type="Texture" id=100]
+[ext_resource path="res://Ryu Sprites/RyuJumpF/79f147d78b8e4bcbb755db12c19ecda6RrpYkcXXLdhEoaSx-15.png" type="Texture" id=101]
+[ext_resource path="res://Ryu Sprites/RyuJumpF/79f147d78b8e4bcbb755db12c19ecda6RrpYkcXXLdhEoaSx-20.png" type="Texture" id=102]
+[ext_resource path="res://Ryu Sprites/RyuJumpF/79f147d78b8e4bcbb755db12c19ecda6RrpYkcXXLdhEoaSx-12.png" type="Texture" id=103]
+[ext_resource path="res://Ryu Sprites/RyuJumpB/554b89de5e134cb1a54e61b737d70796NTulV2JlclxKvd04-19.png" type="Texture" id=104]
+[ext_resource path="res://Ryu Sprites/RyuJumpF/79f147d78b8e4bcbb755db12c19ecda6RrpYkcXXLdhEoaSx-2.png" type="Texture" id=105]
+[ext_resource path="res://Ryu Sprites/RyuJumpF/79f147d78b8e4bcbb755db12c19ecda6RrpYkcXXLdhEoaSx-16.png" type="Texture" id=106]
+[ext_resource path="res://Ryu Sprites/RyuJumpF/79f147d78b8e4bcbb755db12c19ecda6RrpYkcXXLdhEoaSx-5.png" type="Texture" id=107]
+[ext_resource path="res://Ryu Sprites/RyuJumpF/79f147d78b8e4bcbb755db12c19ecda6RrpYkcXXLdhEoaSx-10.png" type="Texture" id=108]
+[ext_resource path="res://Ryu Sprites/RyuJumpF/79f147d78b8e4bcbb755db12c19ecda6RrpYkcXXLdhEoaSx-9.png" type="Texture" id=109]
+[ext_resource path="res://Ryu Sprites/RyuJumpF/79f147d78b8e4bcbb755db12c19ecda6RrpYkcXXLdhEoaSx-3.png" type="Texture" id=110]
+[ext_resource path="res://Ryu Sprites/RyuJumpF/79f147d78b8e4bcbb755db12c19ecda6RrpYkcXXLdhEoaSx-14.png" type="Texture" id=111]
+[ext_resource path="res://Ryu Sprites/RyuJumpF/79f147d78b8e4bcbb755db12c19ecda6RrpYkcXXLdhEoaSx-19.png" type="Texture" id=112]
+[ext_resource path="res://Ryu Sprites/RyuJumpB/554b89de5e134cb1a54e61b737d70796NTulV2JlclxKvd04-17.png" type="Texture" id=113]
+[ext_resource path="res://Ryu Sprites/RyuJumpF/79f147d78b8e4bcbb755db12c19ecda6RrpYkcXXLdhEoaSx-17.png" type="Texture" id=114]
+[ext_resource path="res://Ryu Sprites/RyuJumpF/79f147d78b8e4bcbb755db12c19ecda6RrpYkcXXLdhEoaSx-6.png" type="Texture" id=115]
+[ext_resource path="res://Ryu Sprites/RyuCrouch/11bd30272f3a4cfbfe564db52ea913d0KDXi9OtxcesSjnRV-6.png" type="Texture" id=116]
+[ext_resource path="res://Ryu Sprites/RyuCrouch/11bd30272f3a4cfbfe564db52ea913d0KDXi9OtxcesSjnRV-7.png" type="Texture" id=117]
+[ext_resource path="res://Ryu Sprites/RyuCrouch/11bd30272f3a4cfbfe564db52ea913d0KDXi9OtxcesSjnRV-11.png" type="Texture" id=118]
+[ext_resource path="res://Ryu Sprites/RyuCrouch/11bd30272f3a4cfbfe564db52ea913d0KDXi9OtxcesSjnRV-0.png" type="Texture" id=119]
+[ext_resource path="res://Ryu Sprites/RyuCrouch/11bd30272f3a4cfbfe564db52ea913d0KDXi9OtxcesSjnRV-4.png" type="Texture" id=120]
+[ext_resource path="res://Ryu Sprites/RyuCrouch/11bd30272f3a4cfbfe564db52ea913d0KDXi9OtxcesSjnRV-10.png" type="Texture" id=121]
+[ext_resource path="res://Ryu Sprites/RyuCrouch/11bd30272f3a4cfbfe564db52ea913d0KDXi9OtxcesSjnRV-1.png" type="Texture" id=122]
+[ext_resource path="res://Ryu Sprites/RyuCrouch/11bd30272f3a4cfbfe564db52ea913d0KDXi9OtxcesSjnRV-9.png" type="Texture" id=123]
+[ext_resource path="res://Ryu Sprites/RyuCrouch/11bd30272f3a4cfbfe564db52ea913d0KDXi9OtxcesSjnRV-2.png" type="Texture" id=124]
+[ext_resource path="res://Ryu Sprites/RyuCrouch/11bd30272f3a4cfbfe564db52ea913d0KDXi9OtxcesSjnRV-3.png" type="Texture" id=125]
+[ext_resource path="res://Ryu Sprites/RyuCrouch/11bd30272f3a4cfbfe564db52ea913d0KDXi9OtxcesSjnRV-5.png" type="Texture" id=126]
+[ext_resource path="res://Ryu Sprites/RyuCrouch/11bd30272f3a4cfbfe564db52ea913d0KDXi9OtxcesSjnRV-8.png" type="Texture" id=127]
 
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 24, 48 )
@@ -59,8 +134,23 @@ extents = Vector2( 24, 48 )
 [sub_resource type="SpriteFrames" id=2]
 animations = [ {
 "frames": [ ExtResource( 34 ), ExtResource( 45 ), ExtResource( 44 ), ExtResource( 32 ), ExtResource( 46 ), ExtResource( 47 ), ExtResource( 48 ), ExtResource( 49 ), ExtResource( 38 ), ExtResource( 33 ) ],
-"loop": true,
+"loop": false,
 "name": "Idle",
+"speed": 18.0
+}, {
+"frames": [ ExtResource( 53 ), ExtResource( 79 ), ExtResource( 63 ), ExtResource( 64 ), ExtResource( 67 ), ExtResource( 85 ), ExtResource( 59 ), ExtResource( 54 ), ExtResource( 88 ), ExtResource( 65 ), ExtResource( 66 ), ExtResource( 55 ), ExtResource( 56 ), ExtResource( 82 ), ExtResource( 57 ), ExtResource( 80 ), ExtResource( 71 ), ExtResource( 76 ), ExtResource( 81 ), ExtResource( 77 ) ],
+"loop": false,
+"name": "Jump",
+"speed": 20.0
+}, {
+"frames": [ ExtResource( 61 ), ExtResource( 58 ), ExtResource( 78 ), ExtResource( 83 ), ExtResource( 75 ), ExtResource( 84 ), ExtResource( 86 ), ExtResource( 60 ), ExtResource( 87 ), ExtResource( 73 ), ExtResource( 74 ), ExtResource( 62 ), ExtResource( 68 ), ExtResource( 69 ), ExtResource( 70 ), ExtResource( 72 ), ExtResource( 96 ), ExtResource( 113 ), ExtResource( 98 ), ExtResource( 104 ), ExtResource( 90 ), ExtResource( 91 ) ],
+"loop": false,
+"name": "Jump B",
+"speed": 20.0
+}, {
+"frames": [ ExtResource( 94 ), ExtResource( 99 ), ExtResource( 105 ), ExtResource( 110 ), ExtResource( 97 ), ExtResource( 107 ), ExtResource( 115 ), ExtResource( 92 ), ExtResource( 93 ), ExtResource( 109 ), ExtResource( 108 ), ExtResource( 100 ), ExtResource( 103 ), ExtResource( 89 ), ExtResource( 111 ), ExtResource( 101 ), ExtResource( 106 ), ExtResource( 114 ), ExtResource( 95 ), ExtResource( 112 ), ExtResource( 102 ) ],
+"loop": false,
+"name": "Jump F",
 "speed": 20.0
 }, {
 "frames": [ ExtResource( 50 ), ExtResource( 51 ), ExtResource( 35 ), ExtResource( 42 ), ExtResource( 36 ), ExtResource( 28 ) ],
@@ -77,6 +167,11 @@ animations = [ {
 "loop": false,
 "name": "Medium Punch",
 "speed": 17.0
+}, {
+"frames": [ ExtResource( 119 ), ExtResource( 122 ), ExtResource( 124 ), ExtResource( 125 ), ExtResource( 120 ), ExtResource( 126 ), ExtResource( 116 ), ExtResource( 117 ), ExtResource( 127 ), ExtResource( 123 ), ExtResource( 121 ), ExtResource( 118 ) ],
+"loop": true,
+"name": "Ryu Crouch",
+"speed": 5.0
 }, {
 "frames": [ ExtResource( 1 ), ExtResource( 16 ), ExtResource( 13 ), ExtResource( 18 ), ExtResource( 23 ), ExtResource( 3 ), ExtResource( 9 ), ExtResource( 11 ), ExtResource( 21 ), ExtResource( 19 ), ExtResource( 4 ) ],
 "loop": true,
@@ -100,7 +195,7 @@ extents = Vector2( 13, 10 )
 [sub_resource type="RectangleShape2D" id=6]
 extents = Vector2( 13, 10 )
 
-[node name="KinematicBody2D" type="KinematicBody2D"]
+[node name="Player2" type="KinematicBody2D"]
 script = ExtResource( 52 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
@@ -111,8 +206,7 @@ shape = SubResource( 1 )
 [node name="AnimatedSprite" type="AnimatedSprite" parent="."]
 position = Vector2( 256, 184 )
 frames = SubResource( 2 )
-animation = "Idle"
-frame = 8
+animation = "Ryu Crouch"
 flip_h = true
 
 [node name="Colliders" type="Node2D" parent="."]

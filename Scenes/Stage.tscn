@@ -58,5 +58,5 @@ shape = SubResource( 6 )
 [node name="Player" parent="." instance=ExtResource( 1 )]
 position = Vector2( 190, 385 )
 
-[node name="KinematicBody2D" parent="." instance=ExtResource( 2 )]
+[node name="Player2" parent="." instance=ExtResource( 2 )]
 position = Vector2( 190, 200 )
