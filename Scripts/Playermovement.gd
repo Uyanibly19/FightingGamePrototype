@@ -2,11 +2,11 @@ extends KinematicBody2D
 
 const UP_DIRECTION := Vector2.UP
 
-export var speed := 600.0
+export var speed := 300.0
 
-export var jumpstrength := 1500.0
+export var jumpstrength := 1400.0
 export var maximum_jumps := 2
-export var double_jump_strength := 1200.0
+export var double_jump_strength := 1000.0
 export var gravity := 4500.0
 
 onready var animatedSprite = $AnimatedSprite
