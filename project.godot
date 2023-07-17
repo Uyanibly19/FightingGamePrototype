@@ -9,19 +9,37 @@
 config_version=4
 
 _global_script_classes=[ {
+"base": "Area2D",
+"class": "HitBox",
+"language": "GDScript",
+"path": "res://Scripts/HitBox.gd"
+}, {
+"base": "Area2D",
+"class": "HurtBox",
+"language": "GDScript",
+"path": "res://Scripts/HurtBox.gd"
+}, {
+"base": "KinematicBody2D",
+"class": "Player2",
+"language": "GDScript",
+"path": "res://Scripts/Player2Movement.gd"
+}, {
 "base": "Resource",
 "class": "PlayerControls",
 "language": "GDScript",
 "path": "res://Scripts/PlayerControls.gd"
 } ]
 _global_script_class_icons={
+"HitBox": "",
+"HurtBox": "",
+"Player2": "",
 "PlayerControls": ""
 }
 
 [application]
 
 config/name="Fighting Game Prototype"
-run/main_scene="res://Scenes/Stage.tscn"
+run/main_scene="res://Scenes/Game.tscn"
 
 [autoload]
 

@@ -1,4 +1,4 @@
-[gd_scene load_steps=132 format=2]
+[gd_scene load_steps=138 format=2]
 
 [ext_resource path="res://Ryu Sprites/Ryu Walk Backward/a2059362e57345eaec64321a17c621c5GyllOSWgMrHFm43T-0.png" type="Texture" id=1]
 [ext_resource path="res://Ryu Sprites/Ryu Walk Forward/7363f5e3ceb64333d352ff047b113aaaaeF9MEXu2qLoheh2-0.png" type="Texture" id=2]
@@ -75,7 +75,7 @@
 [ext_resource path="res://Ryu Sprites/RyuJumpB/554b89de5e134cb1a54e61b737d70796NTulV2JlclxKvd04-9.png" type="Texture" id=73]
 [ext_resource path="res://Ryu Sprites/RyuJumpB/554b89de5e134cb1a54e61b737d70796NTulV2JlclxKvd04-10.png" type="Texture" id=74]
 [ext_resource path="res://Ryu Sprites/RyuJumpB/554b89de5e134cb1a54e61b737d70796NTulV2JlclxKvd04-4.png" type="Texture" id=75]
-[ext_resource path="res://Ryu Sprites/RyuJump/32f8012c59fa496eadcbb1b1d6cc98e6NQkFqZfbHcauBm1r-17.png" type="Texture" id=76]
+[ext_resource path="res://Ryu Sprites/RyuHit/b30182c3b40843a6a34d28d94f598ebcFtoRN1BYnW8nvIOx-1.png" type="Texture" id=76]
 [ext_resource path="res://Ryu Sprites/RyuJump/32f8012c59fa496eadcbb1b1d6cc98e6NQkFqZfbHcauBm1r-19.png" type="Texture" id=77]
 [ext_resource path="res://Ryu Sprites/RyuJumpB/554b89de5e134cb1a54e61b737d70796NTulV2JlclxKvd04-2.png" type="Texture" id=78]
 [ext_resource path="res://Ryu Sprites/RyuJump/32f8012c59fa496eadcbb1b1d6cc98e6NQkFqZfbHcauBm1r-1.png" type="Texture" id=79]
@@ -117,17 +117,22 @@
 [ext_resource path="res://Ryu Sprites/RyuJumpF/79f147d78b8e4bcbb755db12c19ecda6RrpYkcXXLdhEoaSx-6.png" type="Texture" id=115]
 [ext_resource path="res://Ryu Sprites/RyuCrouch/11bd30272f3a4cfbfe564db52ea913d0KDXi9OtxcesSjnRV-6.png" type="Texture" id=116]
 [ext_resource path="res://Ryu Sprites/RyuCrouch/11bd30272f3a4cfbfe564db52ea913d0KDXi9OtxcesSjnRV-7.png" type="Texture" id=117]
+[ext_resource path="res://Ryu Sprites/RyuHit/b30182c3b40843a6a34d28d94f598ebcFtoRN1BYnW8nvIOx-2.png" type="Texture" id=118]
 [ext_resource path="res://Ryu Sprites/RyuCrouch/11bd30272f3a4cfbfe564db52ea913d0KDXi9OtxcesSjnRV-0.png" type="Texture" id=119]
 [ext_resource path="res://Ryu Sprites/RyuCrouch/11bd30272f3a4cfbfe564db52ea913d0KDXi9OtxcesSjnRV-4.png" type="Texture" id=120]
+[ext_resource path="res://Ryu Sprites/RyuHit/b30182c3b40843a6a34d28d94f598ebcFtoRN1BYnW8nvIOx-3.png" type="Texture" id=121]
 [ext_resource path="res://Ryu Sprites/RyuCrouch/11bd30272f3a4cfbfe564db52ea913d0KDXi9OtxcesSjnRV-1.png" type="Texture" id=122]
 [ext_resource path="res://Ryu Sprites/RyuCrouch/11bd30272f3a4cfbfe564db52ea913d0KDXi9OtxcesSjnRV-9.png" type="Texture" id=123]
 [ext_resource path="res://Ryu Sprites/RyuCrouch/11bd30272f3a4cfbfe564db52ea913d0KDXi9OtxcesSjnRV-2.png" type="Texture" id=124]
 [ext_resource path="res://Ryu Sprites/RyuCrouch/11bd30272f3a4cfbfe564db52ea913d0KDXi9OtxcesSjnRV-3.png" type="Texture" id=125]
 [ext_resource path="res://Ryu Sprites/RyuCrouch/11bd30272f3a4cfbfe564db52ea913d0KDXi9OtxcesSjnRV-5.png" type="Texture" id=126]
 [ext_resource path="res://Ryu Sprites/RyuCrouch/11bd30272f3a4cfbfe564db52ea913d0KDXi9OtxcesSjnRV-8.png" type="Texture" id=127]
+[ext_resource path="res://Ryu Sprites/RyuHit/b30182c3b40843a6a34d28d94f598ebcFtoRN1BYnW8nvIOx-0.png" type="Texture" id=128]
+[ext_resource path="res://Scripts/HurtBox.gd" type="Script" id=129]
+[ext_resource path="res://Scripts/HitBox.gd" type="Script" id=130]
 
-[sub_resource type="RectangleShape2D" id=1]
-extents = Vector2( 24, 48 )
+[sub_resource type="RectangleShape2D" id=7]
+extents = Vector2( 14.5, 48 )
 
 [sub_resource type="SpriteFrames" id=2]
 animations = [ {
@@ -136,8 +141,8 @@ animations = [ {
 "name": "Idle",
 "speed": 18.0
 }, {
-"frames": [ ExtResource( 53 ), ExtResource( 79 ), ExtResource( 63 ), ExtResource( 64 ), ExtResource( 67 ), ExtResource( 85 ), ExtResource( 59 ), ExtResource( 54 ), ExtResource( 88 ), ExtResource( 65 ), ExtResource( 66 ), ExtResource( 55 ), ExtResource( 56 ), ExtResource( 82 ), ExtResource( 57 ), ExtResource( 80 ), ExtResource( 71 ), ExtResource( 76 ), ExtResource( 81 ), ExtResource( 77 ) ],
-"loop": false,
+"frames": [ ExtResource( 53 ), ExtResource( 79 ), ExtResource( 63 ), ExtResource( 64 ), ExtResource( 67 ), ExtResource( 85 ), ExtResource( 59 ), ExtResource( 54 ), ExtResource( 88 ), ExtResource( 65 ), ExtResource( 66 ), ExtResource( 55 ), ExtResource( 56 ), ExtResource( 82 ), ExtResource( 57 ), ExtResource( 80 ), ExtResource( 71 ), ExtResource( 81 ), ExtResource( 77 ) ],
+"loop": true,
 "name": "Jump",
 "speed": 20.0
 }, {
@@ -171,6 +176,11 @@ animations = [ {
 "name": "Ryu Crouch",
 "speed": 18.0
 }, {
+"frames": [ ExtResource( 128 ), ExtResource( 76 ), ExtResource( 118 ), ExtResource( 121 ) ],
+"loop": true,
+"name": "Ryu LightHit",
+"speed": 5.0
+}, {
 "frames": [ ExtResource( 1 ), ExtResource( 16 ), ExtResource( 13 ), ExtResource( 18 ), ExtResource( 23 ), ExtResource( 3 ), ExtResource( 9 ), ExtResource( 11 ), ExtResource( 21 ), ExtResource( 19 ), ExtResource( 4 ) ],
 "loop": true,
 "name": "Walk Backward",
@@ -193,18 +203,25 @@ extents = Vector2( 13, 10 )
 [sub_resource type="RectangleShape2D" id=6]
 extents = Vector2( 13, 10 )
 
+[sub_resource type="RectangleShape2D" id=8]
+extents = Vector2( 16, 48 )
+
 [node name="Player2" type="KinematicBody2D"]
 script = ExtResource( 52 )
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-modulate = Color( 0.556863, 0.0666667, 0.0666667, 1 )
-position = Vector2( 256, 184 )
-shape = SubResource( 1 )
+[node name="HurtBox" type="Area2D" parent="."]
+collision_layer = 2
+collision_mask = 0
+script = ExtResource( 129 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="HurtBox"]
+position = Vector2( 256, 176 )
+shape = SubResource( 7 )
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="."]
-position = Vector2( 256, 184 )
+position = Vector2( 256, 176 )
 frames = SubResource( 2 )
-animation = "Ryu Crouch"
+animation = "Idle"
 flip_h = true
 
 [node name="Colliders" type="Node2D" parent="."]
@@ -212,6 +229,7 @@ flip_h = true
 [node name="Hand Colliders" type="Node2D" parent="Colliders"]
 
 [node name="Left Hand" type="Area2D" parent="Colliders/Hand Colliders"]
+script = ExtResource( 130 )
 
 [node name="LefthandColl" type="CollisionShape2D" parent="Colliders/Hand Colliders/Left Hand"]
 modulate = Color( 0.0509804, 0.403922, 0.898039, 1 )
@@ -219,6 +237,7 @@ position = Vector2( 240, 168 )
 shape = SubResource( 3 )
 
 [node name="Right Hand" type="Area2D" parent="Colliders/Hand Colliders"]
+script = ExtResource( 130 )
 
 [node name="RightHandColl" type="CollisionShape2D" parent="Colliders/Hand Colliders/Right Hand"]
 position = Vector2( 256, 152 )
@@ -227,14 +246,21 @@ shape = SubResource( 4 )
 [node name="Foot Colliders" type="Node2D" parent="Colliders"]
 
 [node name="Left Foot" type="Area2D" parent="Colliders/Foot Colliders"]
+script = ExtResource( 130 )
 
 [node name="LeftFootColl" type="CollisionShape2D" parent="Colliders/Foot Colliders/Left Foot"]
-position = Vector2( 227, 232 )
+position = Vector2( 224, 224 )
 shape = SubResource( 5 )
 
 [node name="Right Foot" type="Area2D" parent="Colliders/Foot Colliders"]
 position = Vector2( 304, 232 )
+script = ExtResource( 130 )
 
 [node name="RightFootColl" type="CollisionShape2D" parent="Colliders/Foot Colliders/Right Foot"]
-position = Vector2( -19, 0 )
+position = Vector2( -16, -8 )
 shape = SubResource( 6 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+visible = false
+position = Vector2( 256, 176 )
+shape = SubResource( 8 )

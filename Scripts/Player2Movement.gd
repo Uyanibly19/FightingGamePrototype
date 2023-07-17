@@ -1,4 +1,7 @@
+class_name Player2 
 extends KinematicBody2D
+
+# DODO MAKE THIS A CLASS LIKE "PLAYER2" CLASS
 
 const UP_DIRECTION := Vector2.UP
 
@@ -45,6 +48,9 @@ func _ready():
 	time = timeTillNextInput
 
 func _process(delta):
+	
+	# DODO IF YOU SEE THIS, THIS IS GOOD BUT MAKE A STATE MACHINE AND A STATE CLASS TO PUT YOUR ANIMATION AND MECHNANICS
+	
 	if(Input.is_action_pressed("p2LP")):
 		if(currentAttack == 0):
 			animatedSprite.play("Light Punch") 
@@ -87,3 +93,10 @@ func _process(delta):
 	if(Input.is_action_just_released("p2down")):
 		if(currentAttack == 0 ):
 			animatedSprite.play("Idle")
+
+onready var animated_sprite := $AnimatedSprite
+
+
+func take_damage(amount: int) -> void:
+	animated_sprite.play("Ryu LightHit")
+	print("Damage: ", amount)

@@ -1,5 +1,7 @@
 extends KinematicBody2D
 
+# DODO MAKE THIS A "PLAYER" CLASS
+
 const UP_DIRECTION := Vector2.UP
 
 export var speed := 300.0
@@ -45,9 +47,12 @@ func _ready():
 	time = timeTillNextInput
 
 func _process(_delta):
+	
+	# DODO IF YOU SEE THIS, THIS IS GOOD BUT MAKE A STATE MACHINE AND A STATE CLASS TO PUT YOUR ANIMATION AND MECHNANICS
+	
 	if(Input.is_action_pressed("LP")):
 		if(currentAttack == 0):
-			animatedSprite.play("Light punch") 
+			animatedSprite.play("Light punch")
 	if(Input.is_action_just_released("LP")):
 		if(currentAttack == 0):
 			animatedSprite.play("Idle")
@@ -87,3 +92,10 @@ func _process(_delta):
 	if (Input.is_action_just_released("down")):
 		if(currentAttack == 0 ):
 			animatedSprite.play("Idle")
+
+onready var animated_sprite := $AnimatedSprite
+
+
+func take_damage(amount: int) -> void:
+	animated_sprite.play("Ken LightHit")
+	print("Damage: ", amount)
