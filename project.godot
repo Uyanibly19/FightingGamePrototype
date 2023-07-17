@@ -15,7 +15,7 @@ _global_script_classes=[ {
 "path": "res://Scripts/HitBox.gd"
 }, {
 "base": "Area2D",
-"class": "HurtBox",
+"class": "HurtBoxes",
 "language": "GDScript",
 "path": "res://Scripts/HurtBox.gd"
 }, {
@@ -31,7 +31,7 @@ _global_script_classes=[ {
 } ]
 _global_script_class_icons={
 "HitBox": "",
-"HurtBox": "",
+"HurtBoxes": "",
 "Player2": "",
 "PlayerControls": ""
 }

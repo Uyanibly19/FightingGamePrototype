@@ -54,6 +54,7 @@ func _process(delta):
 	if(Input.is_action_pressed("p2LP")):
 		if(currentAttack == 0):
 			animatedSprite.play("Light Punch") 
+			#isAttack == true
 	if(Input.is_action_just_released("p2LP")):
 		if(currentAttack == 0):
 			animatedSprite.play("Idle")
@@ -94,9 +95,6 @@ func _process(delta):
 		if(currentAttack == 0 ):
 			animatedSprite.play("Idle")
 
-onready var animated_sprite := $AnimatedSprite
-
-
 func take_damage(amount: int) -> void:
-	animated_sprite.play("Ryu LightHit")
+	animatedSprite.play("Ryu LightHit")
 	print("Damage: ", amount)

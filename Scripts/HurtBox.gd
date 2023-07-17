@@ -1,6 +1,7 @@
-class_name HurtBox
+class_name HurtBoxes
 extends Area2D
 
+# DODO REWORK ON THIS - CHECK THE HITBOXES AND HURTBOXES TOO
 
 func _init() -> void:
 	collision_layer = 0

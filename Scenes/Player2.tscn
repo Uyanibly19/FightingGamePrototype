@@ -222,6 +222,8 @@ shape = SubResource( 7 )
 position = Vector2( 256, 176 )
 frames = SubResource( 2 )
 animation = "Idle"
+frame = 6
+playing = true
 flip_h = true
 
 [node name="Colliders" type="Node2D" parent="."]

@@ -93,9 +93,7 @@ func _process(_delta):
 		if(currentAttack == 0 ):
 			animatedSprite.play("Idle")
 
-onready var animated_sprite := $AnimatedSprite
-
 
 func take_damage(amount: int) -> void:
-	animated_sprite.play("Ken LightHit")
+	animatedSprite.play("Ken LightHit")
 	print("Damage: ", amount)
