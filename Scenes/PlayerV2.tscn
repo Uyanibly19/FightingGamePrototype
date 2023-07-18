@@ -131,7 +131,7 @@
 [ext_resource path="res://Ken Sprites/KenHit/85b12d301979426786687cc1c71ceff27duAWXA1MSS27pvD-0.png" type="Texture" id=129]
 [ext_resource path="res://Ken Sprites/KenHit/85b12d301979426786687cc1c71ceff27duAWXA1MSS27pvD-1.png" type="Texture" id=130]
 [ext_resource path="res://Ken Sprites/KenHit/85b12d301979426786687cc1c71ceff27duAWXA1MSS27pvD-3.png" type="Texture" id=131]
-[ext_resource path="res://Scripts/HurtBox.gd" type="Script" id=133]
+[ext_resource path="res://Scripts/HurtBoxes.gd" type="Script" id=132]
 
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 16, 46 )
@@ -143,7 +143,7 @@ extents = Vector2( 13, 12 )
 extents = Vector2( 32, 24 )
 
 [sub_resource type="RectangleShape2D" id=10]
-extents = Vector2( 40, 20 )
+extents = Vector2( 40, 24 )
 
 [sub_resource type="SpriteFrames" id=2]
 animations = [ {
@@ -204,7 +204,7 @@ animations = [ {
 } ]
 
 [sub_resource type="RectangleShape2D" id=11]
-extents = Vector2( 28, 52 )
+extents = Vector2( 28, 56 )
 
 [node name="Player" type="KinematicBody2D"]
 script = ExtResource( 53 )
@@ -215,7 +215,7 @@ position = Vector2( 0, 0.0351906 )
 shape = SubResource( 1 )
 
 [node name="HurtBoxes" type="Area2D" parent="."]
-script = ExtResource( 133 )
+script = ExtResource( 132 )
 
 [node name="Head" type="CollisionShape2D" parent="HurtBoxes"]
 modulate = Color( 0.00784314, 1, 0, 1 )
@@ -229,18 +229,21 @@ shape = SubResource( 9 )
 
 [node name="Legs" type="CollisionShape2D" parent="HurtBoxes"]
 modulate = Color( 0.00784314, 1, 0, 1 )
-position = Vector2( 0, 28 )
+position = Vector2( 0, 32 )
 shape = SubResource( 10 )
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="."]
-position = Vector2( -1.32341, -2.75 )
-scale = Vector2( 0.991707, 0.959459 )
 frames = SubResource( 2 )
 animation = "Idle"
+frame = 7
+playing = true
 
-[node name="HitBoxes" type="Area2D" parent="."]
+[node name="HitBoxes" type="Area2D" parent="." groups=["P1Attack"]]
 
 [node name="Attack" type="CollisionShape2D" parent="HitBoxes"]
 modulate = Color( 0.964706, 0, 0.678431, 1 )
-position = Vector2( 56, -4 )
+position = Vector2( 56, 0 )
 shape = SubResource( 11 )
+disabled = true
+
+[connection signal="animation_finished" from="AnimatedSprite" to="." method="_on_AnimatedSprite_animation_finished"]

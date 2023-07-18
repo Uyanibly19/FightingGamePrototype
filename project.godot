@@ -14,16 +14,6 @@ _global_script_classes=[ {
 "language": "GDScript",
 "path": "res://Scripts/HitBox.gd"
 }, {
-"base": "Area2D",
-"class": "HurtBoxes",
-"language": "GDScript",
-"path": "res://Scripts/HurtBox.gd"
-}, {
-"base": "KinematicBody2D",
-"class": "Player2",
-"language": "GDScript",
-"path": "res://Scripts/Player2Movement.gd"
-}, {
 "base": "Resource",
 "class": "PlayerControls",
 "language": "GDScript",
@@ -31,8 +21,6 @@ _global_script_classes=[ {
 } ]
 _global_script_class_icons={
 "HitBox": "",
-"HurtBoxes": "",
-"Player2": "",
 "PlayerControls": ""
 }
 

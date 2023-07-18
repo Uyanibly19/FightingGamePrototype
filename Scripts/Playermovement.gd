@@ -1,7 +1,5 @@
 extends KinematicBody2D
 
-# DODO MAKE THIS A "PLAYER" CLASS
-
 const UP_DIRECTION := Vector2.UP
 
 export var speed := 300.0
@@ -14,6 +12,7 @@ export var gravity := 4500.0
 onready var animatedSprite = $AnimatedSprite
 
 var isInCombo = false
+var isAttacking = false
 
 var timeTillNextInput = 0.5
 var time = 0
@@ -46,54 +45,22 @@ func _physics_process(delta: float) -> void:
 func _ready():
 	time = timeTillNextInput
 
-func _process(_delta):
+func _process(delta):
+	if Input.is_action_pressed("right") && isAttacking == false:
+		$AnimatedSprite.play("WalkForward")
+	elif Input.is_action_pressed("left") && isAttacking == false:
+		$AnimatedSprite.play("WalkBackward")
+	else:
+		if isAttacking == false:
+			$AnimatedSprite.play("Idle")
 	
-	# DODO IF YOU SEE THIS, THIS IS GOOD BUT MAKE A STATE MACHINE AND A STATE CLASS TO PUT YOUR ANIMATION AND MECHNANICS
+	if Input.is_action_just_pressed("MP"):
+		$AnimatedSprite.play("Medium punch")
+		isAttacking = true
+		$HitBoxes/Attack.disabled = false
 	
-	if(Input.is_action_pressed("LP")):
-		if(currentAttack == 0):
-			animatedSprite.play("Light punch")
-	if(Input.is_action_just_released("LP")):
-		if(currentAttack == 0):
-			animatedSprite.play("Idle")
-	if(Input.is_action_pressed("right")):
-		if(currentAttack == 0):
-			animatedSprite.play("WalkForward")
-	if(Input.is_action_just_released("right")):
-		if(currentAttack == 0):
-			animatedSprite.play("Idle")
-	if(Input.is_action_pressed("left")):
-		if(currentAttack == 0):
-			animatedSprite.play("WalkBackward")
-	if(Input.is_action_just_released("left")):
-		if(currentAttack == 0):
-			animatedSprite.play("Idle")
-	if(Input.is_action_pressed("MP")):
-		if(currentAttack == 0):
-			animatedSprite.play("Medium punch")
-	if Input.is_action_just_released("MP"):
-		if(currentAttack == 0):
-			animatedSprite.play("Idle")
-	if(Input.is_action_pressed("LK")):
-		if(currentAttack == 0):
-			animatedSprite.play("Light kick")
-	if(Input.is_action_just_released("LK")):
-		if(currentAttack == 0):
-			animatedSprite.play("Idle")
-	if(Input.is_action_pressed("up")):
-		if(currentAttack == 0):
-			animatedSprite.play("Jump")
-	if(Input.is_action_just_released("up")):
-		if(currentAttack == 0):
-			animatedSprite.play("Idle")
-	if(Input.is_action_pressed("down")):
-		if(currentAttack ==0 ):
-			animatedSprite.play("Ken Crouch")
-	if (Input.is_action_just_released("down")):
-		if(currentAttack == 0 ):
-			animatedSprite.play("Idle")
 
-
-func take_damage(amount: int) -> void:
-	animatedSprite.play("Ken LightHit")
-	print("Damage: ", amount)
+func _on_AnimatedSprite_animation_finished():
+	if $AnimatedSprite.animation == "Medium punch" && isAttacking:
+		$HitBoxes/Attack.disabled = true
+		isAttacking = false
