@@ -1,0 +1,241 @@
+[gd_scene load_steps=137 format=2]
+
+[ext_resource path="res://Ken Sprites/Ken lk/703b6c1dfea349b6f17dfab885817ba1IZMEKwfMCJUQVYZf-2.png" type="Texture" id=1]
+[ext_resource path="res://Ken Sprites/Ken lk/703b6c1dfea349b6f17dfab885817ba1IZMEKwfMCJUQVYZf-3.png" type="Texture" id=2]
+[ext_resource path="res://Ken Sprites/Ken Idle/84c5efaccc2241c89d4400fef5507d09FZoi6kDca8mmFsgV-1.png" type="Texture" id=3]
+[ext_resource path="res://Ken Sprites/Ken Idle/84c5efaccc2241c89d4400fef5507d09FZoi6kDca8mmFsgV-5.png" type="Texture" id=4]
+[ext_resource path="res://Ken Sprites/Ken Idle/84c5efaccc2241c89d4400fef5507d09FZoi6kDca8mmFsgV-2.png" type="Texture" id=5]
+[ext_resource path="res://Ken Sprites/Ken Idle/84c5efaccc2241c89d4400fef5507d09FZoi6kDca8mmFsgV-6.png" type="Texture" id=6]
+[ext_resource path="res://Ken Sprites/Ken Idle/84c5efaccc2241c89d4400fef5507d09FZoi6kDca8mmFsgV-9.png" type="Texture" id=7]
+[ext_resource path="res://Ken Sprites/Ken Idle/84c5efaccc2241c89d4400fef5507d09FZoi6kDca8mmFsgV-4.png" type="Texture" id=8]
+[ext_resource path="res://Ken Sprites/Ken Idle/84c5efaccc2241c89d4400fef5507d09FZoi6kDca8mmFsgV-7.png" type="Texture" id=9]
+[ext_resource path="res://Ken Sprites/Ken Idle/84c5efaccc2241c89d4400fef5507d09FZoi6kDca8mmFsgV-3.png" type="Texture" id=10]
+[ext_resource path="res://Ken Sprites/Ken lk/703b6c1dfea349b6f17dfab885817ba1IZMEKwfMCJUQVYZf-0.png" type="Texture" id=11]
+[ext_resource path="res://Ken Sprites/Ken Idle/84c5efaccc2241c89d4400fef5507d09FZoi6kDca8mmFsgV-0.png" type="Texture" id=12]
+[ext_resource path="res://Ken Sprites/Ken lk/703b6c1dfea349b6f17dfab885817ba1IZMEKwfMCJUQVYZf-1.png" type="Texture" id=13]
+[ext_resource path="res://Ken Sprites/Ken Idle/84c5efaccc2241c89d4400fef5507d09FZoi6kDca8mmFsgV-8.png" type="Texture" id=14]
+[ext_resource path="res://Ken Sprites/Ken Walk F/e997b05b4f5b49dfc6a30f96f5452b11S89zPeC52eKKJHeJ-7.png" type="Texture" id=15]
+[ext_resource path="res://Ken Sprites/Ken Walk F/e997b05b4f5b49dfc6a30f96f5452b11S89zPeC52eKKJHeJ-10.png" type="Texture" id=16]
+[ext_resource path="res://Ken Sprites/Ken Walk F/e997b05b4f5b49dfc6a30f96f5452b11S89zPeC52eKKJHeJ-8.png" type="Texture" id=17]
+[ext_resource path="res://Ken Sprites/Ken Walk F/e997b05b4f5b49dfc6a30f96f5452b11S89zPeC52eKKJHeJ-9.png" type="Texture" id=18]
+[ext_resource path="res://Ken Sprites/Ken mp/a214aeb70dfe4156bb8e6576772d97edsmMRqC8aad3996xC-3.png" type="Texture" id=19]
+[ext_resource path="res://Ken Sprites/Ken mp/a214aeb70dfe4156bb8e6576772d97edsmMRqC8aad3996xC-5.png" type="Texture" id=20]
+[ext_resource path="res://Ken Sprites/Ken mp/a214aeb70dfe4156bb8e6576772d97edsmMRqC8aad3996xC-6.png" type="Texture" id=21]
+[ext_resource path="res://Ken Sprites/Ken lp/1bbb372dbd924664c220e7157144f5e4CcRcxdFKat3y4E7F-3.png" type="Texture" id=22]
+[ext_resource path="res://Ken Sprites/Ken mp/a214aeb70dfe4156bb8e6576772d97edsmMRqC8aad3996xC-2.png" type="Texture" id=23]
+[ext_resource path="res://Ken Sprites/Ken mp/a214aeb70dfe4156bb8e6576772d97edsmMRqC8aad3996xC-7.png" type="Texture" id=24]
+[ext_resource path="res://Ken Sprites/Ken mp/a214aeb70dfe4156bb8e6576772d97edsmMRqC8aad3996xC-4.png" type="Texture" id=25]
+[ext_resource path="res://Ken Sprites/Ken mp/a214aeb70dfe4156bb8e6576772d97edsmMRqC8aad3996xC-8.png" type="Texture" id=26]
+[ext_resource path="res://Ken Sprites/Ken mp/a214aeb70dfe4156bb8e6576772d97edsmMRqC8aad3996xC-0.png" type="Texture" id=27]
+[ext_resource path="res://Ken Sprites/Ken lp/1bbb372dbd924664c220e7157144f5e4CcRcxdFKat3y4E7F-4.png" type="Texture" id=28]
+[ext_resource path="res://Ken Sprites/Ken Walk B/ae35a6fc8c044daec50d7714b08c7cf0IsOqEluPfzeSiSrj-0.png" type="Texture" id=29]
+[ext_resource path="res://Ken Sprites/Ken lk/703b6c1dfea349b6f17dfab885817ba1IZMEKwfMCJUQVYZf-5.png" type="Texture" id=30]
+[ext_resource path="res://Ken Sprites/Ken lp/1bbb372dbd924664c220e7157144f5e4CcRcxdFKat3y4E7F-1.png" type="Texture" id=31]
+[ext_resource path="res://Ken Sprites/Ken lk/703b6c1dfea349b6f17dfab885817ba1IZMEKwfMCJUQVYZf-4.png" type="Texture" id=32]
+[ext_resource path="res://Ken Sprites/Ken lp/1bbb372dbd924664c220e7157144f5e4CcRcxdFKat3y4E7F-0.png" type="Texture" id=33]
+[ext_resource path="res://Ken Sprites/Ken lp/1bbb372dbd924664c220e7157144f5e4CcRcxdFKat3y4E7F-2.png" type="Texture" id=34]
+[ext_resource path="res://Ken Sprites/Ken mp/a214aeb70dfe4156bb8e6576772d97edsmMRqC8aad3996xC-1.png" type="Texture" id=35]
+[ext_resource path="res://Ken Sprites/Ken Walk B/ae35a6fc8c044daec50d7714b08c7cf0IsOqEluPfzeSiSrj-2.png" type="Texture" id=36]
+[ext_resource path="res://Ken Sprites/Ken Walk F/e997b05b4f5b49dfc6a30f96f5452b11S89zPeC52eKKJHeJ-3.png" type="Texture" id=37]
+[ext_resource path="res://Ken Sprites/Ken Walk F/e997b05b4f5b49dfc6a30f96f5452b11S89zPeC52eKKJHeJ-4.png" type="Texture" id=38]
+[ext_resource path="res://Ken Sprites/Ken Walk B/ae35a6fc8c044daec50d7714b08c7cf0IsOqEluPfzeSiSrj-4.png" type="Texture" id=39]
+[ext_resource path="res://Ken Sprites/Ken Walk F/e997b05b4f5b49dfc6a30f96f5452b11S89zPeC52eKKJHeJ-6.png" type="Texture" id=40]
+[ext_resource path="res://Ken Sprites/Ken Walk B/ae35a6fc8c044daec50d7714b08c7cf0IsOqEluPfzeSiSrj-9.png" type="Texture" id=41]
+[ext_resource path="res://Ken Sprites/Ken Walk B/ae35a6fc8c044daec50d7714b08c7cf0IsOqEluPfzeSiSrj-5.png" type="Texture" id=42]
+[ext_resource path="res://Ken Sprites/Ken Walk B/ae35a6fc8c044daec50d7714b08c7cf0IsOqEluPfzeSiSrj-6.png" type="Texture" id=43]
+[ext_resource path="res://Ken Sprites/Ken Walk F/e997b05b4f5b49dfc6a30f96f5452b11S89zPeC52eKKJHeJ-0.png" type="Texture" id=44]
+[ext_resource path="res://Ken Sprites/Ken Walk B/ae35a6fc8c044daec50d7714b08c7cf0IsOqEluPfzeSiSrj-1.png" type="Texture" id=45]
+[ext_resource path="res://Ken Sprites/Ken Walk F/e997b05b4f5b49dfc6a30f96f5452b11S89zPeC52eKKJHeJ-5.png" type="Texture" id=46]
+[ext_resource path="res://Ken Sprites/Ken Walk B/ae35a6fc8c044daec50d7714b08c7cf0IsOqEluPfzeSiSrj-7.png" type="Texture" id=47]
+[ext_resource path="res://Ken Sprites/Ken Walk B/ae35a6fc8c044daec50d7714b08c7cf0IsOqEluPfzeSiSrj-3.png" type="Texture" id=48]
+[ext_resource path="res://Ken Sprites/Ken Walk B/ae35a6fc8c044daec50d7714b08c7cf0IsOqEluPfzeSiSrj-8.png" type="Texture" id=49]
+[ext_resource path="res://Ken Sprites/Ken Walk F/e997b05b4f5b49dfc6a30f96f5452b11S89zPeC52eKKJHeJ-1.png" type="Texture" id=50]
+[ext_resource path="res://Ken Sprites/Ken Walk B/ae35a6fc8c044daec50d7714b08c7cf0IsOqEluPfzeSiSrj-10.png" type="Texture" id=51]
+[ext_resource path="res://Ken Sprites/Ken Walk F/e997b05b4f5b49dfc6a30f96f5452b11S89zPeC52eKKJHeJ-2.png" type="Texture" id=52]
+[ext_resource path="res://Scripts/Player1Movement.gd" type="Script" id=53]
+[ext_resource path="res://Ken Sprites/KenJump/c4e61c6652e94e0ac9fd73f97ebed2400YSVfa9vnxH6s22z-0.png" type="Texture" id=54]
+[ext_resource path="res://Ken Sprites/KenJump/c4e61c6652e94e0ac9fd73f97ebed2400YSVfa9vnxH6s22z-2.png" type="Texture" id=55]
+[ext_resource path="res://Ken Sprites/KenJump/c4e61c6652e94e0ac9fd73f97ebed2400YSVfa9vnxH6s22z-4.png" type="Texture" id=56]
+[ext_resource path="res://Ken Sprites/KenJump/c4e61c6652e94e0ac9fd73f97ebed2400YSVfa9vnxH6s22z-5.png" type="Texture" id=57]
+[ext_resource path="res://Ken Sprites/KenJump/c4e61c6652e94e0ac9fd73f97ebed2400YSVfa9vnxH6s22z-1.png" type="Texture" id=58]
+[ext_resource path="res://Ken Sprites/KenJump/c4e61c6652e94e0ac9fd73f97ebed2400YSVfa9vnxH6s22z-3.png" type="Texture" id=59]
+[ext_resource path="res://Ken Sprites/KenJump/c4e61c6652e94e0ac9fd73f97ebed2400YSVfa9vnxH6s22z-10.png" type="Texture" id=60]
+[ext_resource path="res://Ken Sprites/KenJump/c4e61c6652e94e0ac9fd73f97ebed2400YSVfa9vnxH6s22z-6.png" type="Texture" id=61]
+[ext_resource path="res://Ken Sprites/KenJump/c4e61c6652e94e0ac9fd73f97ebed2400YSVfa9vnxH6s22z-11.png" type="Texture" id=62]
+[ext_resource path="res://Ken Sprites/KenJump/c4e61c6652e94e0ac9fd73f97ebed2400YSVfa9vnxH6s22z-7.png" type="Texture" id=63]
+[ext_resource path="res://Ken Sprites/KenJump/c4e61c6652e94e0ac9fd73f97ebed2400YSVfa9vnxH6s22z-9.png" type="Texture" id=64]
+[ext_resource path="res://Ken Sprites/KenJump/c4e61c6652e94e0ac9fd73f97ebed2400YSVfa9vnxH6s22z-8.png" type="Texture" id=65]
+[ext_resource path="res://Ken Sprites/KenJump/c4e61c6652e94e0ac9fd73f97ebed2400YSVfa9vnxH6s22z-12.png" type="Texture" id=66]
+[ext_resource path="res://Ken Sprites/KenJump/c4e61c6652e94e0ac9fd73f97ebed2400YSVfa9vnxH6s22z-13.png" type="Texture" id=67]
+[ext_resource path="res://Ken Sprites/KenJumpF/4e50b6467f6f446096627678ae001195zAi1Gbc0uNt6dciF-12.png" type="Texture" id=68]
+[ext_resource path="res://Ken Sprites/KenJumpF/4e50b6467f6f446096627678ae001195zAi1Gbc0uNt6dciF-8.png" type="Texture" id=69]
+[ext_resource path="res://Ken Sprites/KenJumpF/4e50b6467f6f446096627678ae001195zAi1Gbc0uNt6dciF-21.png" type="Texture" id=70]
+[ext_resource path="res://Ken Sprites/KenJumpF/4e50b6467f6f446096627678ae001195zAi1Gbc0uNt6dciF-7.png" type="Texture" id=71]
+[ext_resource path="res://Ken Sprites/KenJumpF/4e50b6467f6f446096627678ae001195zAi1Gbc0uNt6dciF-6.png" type="Texture" id=72]
+[ext_resource path="res://Ken Sprites/KenJumpF/4e50b6467f6f446096627678ae001195zAi1Gbc0uNt6dciF-9.png" type="Texture" id=73]
+[ext_resource path="res://Ken Sprites/KenJumpF/4e50b6467f6f446096627678ae001195zAi1Gbc0uNt6dciF-10.png" type="Texture" id=74]
+[ext_resource path="res://Ken Sprites/KenJumpF/4e50b6467f6f446096627678ae001195zAi1Gbc0uNt6dciF-11.png" type="Texture" id=75]
+[ext_resource path="res://Ken Sprites/KenJumpF/4e50b6467f6f446096627678ae001195zAi1Gbc0uNt6dciF-13.png" type="Texture" id=76]
+[ext_resource path="res://Ken Sprites/KenJumpF/4e50b6467f6f446096627678ae001195zAi1Gbc0uNt6dciF-14.png" type="Texture" id=77]
+[ext_resource path="res://Ken Sprites/KenJumpF/4e50b6467f6f446096627678ae001195zAi1Gbc0uNt6dciF-16.png" type="Texture" id=78]
+[ext_resource path="res://Ken Sprites/KenJumpF/4e50b6467f6f446096627678ae001195zAi1Gbc0uNt6dciF-17.png" type="Texture" id=79]
+[ext_resource path="res://Ken Sprites/KenJumpF/4e50b6467f6f446096627678ae001195zAi1Gbc0uNt6dciF-18.png" type="Texture" id=80]
+[ext_resource path="res://Ken Sprites/KenJumpF/4e50b6467f6f446096627678ae001195zAi1Gbc0uNt6dciF-15.png" type="Texture" id=81]
+[ext_resource path="res://Ken Sprites/KenJumpF/4e50b6467f6f446096627678ae001195zAi1Gbc0uNt6dciF-19.png" type="Texture" id=82]
+[ext_resource path="res://Ken Sprites/KenJumpF/4e50b6467f6f446096627678ae001195zAi1Gbc0uNt6dciF-20.png" type="Texture" id=83]
+[ext_resource path="res://Ken Sprites/KenJumpB/0f2343e2f31f42b8f743800ce4f99febcWeEYnszSU1cQE3S-6.png" type="Texture" id=84]
+[ext_resource path="res://Ken Sprites/KenJumpB/0f2343e2f31f42b8f743800ce4f99febcWeEYnszSU1cQE3S-0.png" type="Texture" id=85]
+[ext_resource path="res://Ken Sprites/KenJumpB/0f2343e2f31f42b8f743800ce4f99febcWeEYnszSU1cQE3S-8.png" type="Texture" id=86]
+[ext_resource path="res://Ken Sprites/KenJump/c4e61c6652e94e0ac9fd73f97ebed2400YSVfa9vnxH6s22z-15.png" type="Texture" id=87]
+[ext_resource path="res://Ken Sprites/KenJump/c4e61c6652e94e0ac9fd73f97ebed2400YSVfa9vnxH6s22z-19.png" type="Texture" id=88]
+[ext_resource path="res://Ken Sprites/KenJump/c4e61c6652e94e0ac9fd73f97ebed2400YSVfa9vnxH6s22z-20.png" type="Texture" id=89]
+[ext_resource path="res://Ken Sprites/KenJumpB/0f2343e2f31f42b8f743800ce4f99febcWeEYnszSU1cQE3S-1.png" type="Texture" id=90]
+[ext_resource path="res://Ken Sprites/KenJumpB/0f2343e2f31f42b8f743800ce4f99febcWeEYnszSU1cQE3S-2.png" type="Texture" id=91]
+[ext_resource path="res://Ken Sprites/KenJumpF/4e50b6467f6f446096627678ae001195zAi1Gbc0uNt6dciF-1.png" type="Texture" id=92]
+[ext_resource path="res://Ken Sprites/KenJumpF/4e50b6467f6f446096627678ae001195zAi1Gbc0uNt6dciF-2.png" type="Texture" id=93]
+[ext_resource path="res://Ken Sprites/KenJumpB/0f2343e2f31f42b8f743800ce4f99febcWeEYnszSU1cQE3S-10.png" type="Texture" id=94]
+[ext_resource path="res://Ken Sprites/KenJumpF/4e50b6467f6f446096627678ae001195zAi1Gbc0uNt6dciF-3.png" type="Texture" id=95]
+[ext_resource path="res://Ken Sprites/KenJumpB/0f2343e2f31f42b8f743800ce4f99febcWeEYnszSU1cQE3S-13.png" type="Texture" id=96]
+[ext_resource path="res://Ken Sprites/KenJumpB/0f2343e2f31f42b8f743800ce4f99febcWeEYnszSU1cQE3S-9.png" type="Texture" id=97]
+[ext_resource path="res://Ken Sprites/KenJumpB/0f2343e2f31f42b8f743800ce4f99febcWeEYnszSU1cQE3S-19.png" type="Texture" id=98]
+[ext_resource path="res://Ken Sprites/KenJumpB/0f2343e2f31f42b8f743800ce4f99febcWeEYnszSU1cQE3S-4.png" type="Texture" id=99]
+[ext_resource path="res://Ken Sprites/KenJumpB/0f2343e2f31f42b8f743800ce4f99febcWeEYnszSU1cQE3S-21.png" type="Texture" id=100]
+[ext_resource path="res://Ken Sprites/KenJumpF/4e50b6467f6f446096627678ae001195zAi1Gbc0uNt6dciF-4.png" type="Texture" id=101]
+[ext_resource path="res://Ken Sprites/KenJumpF/4e50b6467f6f446096627678ae001195zAi1Gbc0uNt6dciF-5.png" type="Texture" id=102]
+[ext_resource path="res://Ken Sprites/KenHit/85b12d301979426786687cc1c71ceff27duAWXA1MSS27pvD-2.png" type="Texture" id=103]
+[ext_resource path="res://Ken Sprites/KenJumpB/0f2343e2f31f42b8f743800ce4f99febcWeEYnszSU1cQE3S-14.png" type="Texture" id=104]
+[ext_resource path="res://Ken Sprites/KenJumpB/0f2343e2f31f42b8f743800ce4f99febcWeEYnszSU1cQE3S-3.png" type="Texture" id=105]
+[ext_resource path="res://Ken Sprites/KenJumpB/0f2343e2f31f42b8f743800ce4f99febcWeEYnszSU1cQE3S-16.png" type="Texture" id=106]
+[ext_resource path="res://Ken Sprites/KenJumpB/0f2343e2f31f42b8f743800ce4f99febcWeEYnszSU1cQE3S-17.png" type="Texture" id=107]
+[ext_resource path="res://Ken Sprites/KenJumpB/0f2343e2f31f42b8f743800ce4f99febcWeEYnszSU1cQE3S-5.png" type="Texture" id=108]
+[ext_resource path="res://Ken Sprites/KenJumpB/0f2343e2f31f42b8f743800ce4f99febcWeEYnszSU1cQE3S-11.png" type="Texture" id=109]
+[ext_resource path="res://Ken Sprites/KenJump/c4e61c6652e94e0ac9fd73f97ebed2400YSVfa9vnxH6s22z-14.png" type="Texture" id=110]
+[ext_resource path="res://Ken Sprites/KenJump/c4e61c6652e94e0ac9fd73f97ebed2400YSVfa9vnxH6s22z-16.png" type="Texture" id=111]
+[ext_resource path="res://Ken Sprites/KenJumpB/0f2343e2f31f42b8f743800ce4f99febcWeEYnszSU1cQE3S-12.png" type="Texture" id=112]
+[ext_resource path="res://Ken Sprites/KenJumpB/0f2343e2f31f42b8f743800ce4f99febcWeEYnszSU1cQE3S-18.png" type="Texture" id=113]
+[ext_resource path="res://Ken Sprites/KenJumpB/0f2343e2f31f42b8f743800ce4f99febcWeEYnszSU1cQE3S-7.png" type="Texture" id=114]
+[ext_resource path="res://Ken Sprites/KenJumpB/0f2343e2f31f42b8f743800ce4f99febcWeEYnszSU1cQE3S-20.png" type="Texture" id=115]
+[ext_resource path="res://Ken Sprites/KenJumpB/0f2343e2f31f42b8f743800ce4f99febcWeEYnszSU1cQE3S-15.png" type="Texture" id=116]
+[ext_resource path="res://Ken Sprites/KenJumpF/4e50b6467f6f446096627678ae001195zAi1Gbc0uNt6dciF-0.png" type="Texture" id=117]
+[ext_resource path="res://Ken Sprites/KenJump/c4e61c6652e94e0ac9fd73f97ebed2400YSVfa9vnxH6s22z-17.png" type="Texture" id=118]
+[ext_resource path="res://Ken Sprites/KenCrouch/KenCrouch-2.png" type="Texture" id=119]
+[ext_resource path="res://Ken Sprites/KenCrouch/KenCrouch-3.png" type="Texture" id=120]
+[ext_resource path="res://Ken Sprites/KenCrouch/KenCrouch-0.png" type="Texture" id=121]
+[ext_resource path="res://Ken Sprites/KenCrouch/KenCrouch-8.png" type="Texture" id=122]
+[ext_resource path="res://Ken Sprites/KenCrouch/KenCrouch-1.png" type="Texture" id=123]
+[ext_resource path="res://Ken Sprites/KenCrouch/KenCrouch-4.png" type="Texture" id=124]
+[ext_resource path="res://Ken Sprites/KenCrouch/KenCrouch-6.png" type="Texture" id=125]
+[ext_resource path="res://Ken Sprites/KenCrouch/KenCrouch-9.png" type="Texture" id=126]
+[ext_resource path="res://Ken Sprites/KenCrouch/KenCrouch-5.png" type="Texture" id=127]
+[ext_resource path="res://Ken Sprites/KenCrouch/KenCrouch-7.png" type="Texture" id=128]
+[ext_resource path="res://Ken Sprites/KenHit/85b12d301979426786687cc1c71ceff27duAWXA1MSS27pvD-0.png" type="Texture" id=129]
+[ext_resource path="res://Ken Sprites/KenHit/85b12d301979426786687cc1c71ceff27duAWXA1MSS27pvD-1.png" type="Texture" id=130]
+[ext_resource path="res://Ken Sprites/KenHit/85b12d301979426786687cc1c71ceff27duAWXA1MSS27pvD-3.png" type="Texture" id=131]
+[ext_resource path="res://Scenes/StateMachineKen.gd" type="Script" id=132]
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 16, 46 )
+
+[sub_resource type="RectangleShape2D" id=9]
+extents = Vector2( 42, 56 )
+
+[sub_resource type="SpriteFrames" id=2]
+animations = [ {
+"frames": [ ExtResource( 12 ), ExtResource( 3 ), ExtResource( 5 ), ExtResource( 10 ), ExtResource( 8 ), ExtResource( 4 ), ExtResource( 6 ), ExtResource( 9 ), ExtResource( 14 ), ExtResource( 7 ) ],
+"loop": true,
+"name": "Idle",
+"speed": 20.0
+}, {
+"frames": [ ExtResource( 54 ), ExtResource( 58 ), ExtResource( 55 ), ExtResource( 59 ), ExtResource( 56 ), ExtResource( 57 ), ExtResource( 61 ), ExtResource( 63 ), ExtResource( 65 ), ExtResource( 64 ), ExtResource( 60 ), ExtResource( 62 ), ExtResource( 66 ), ExtResource( 67 ), ExtResource( 110 ), ExtResource( 87 ), ExtResource( 111 ), ExtResource( 118 ), ExtResource( 88 ), ExtResource( 89 ) ],
+"loop": false,
+"name": "Jump",
+"speed": 20.0
+}, {
+"frames": [ ExtResource( 85 ), ExtResource( 90 ), ExtResource( 91 ), ExtResource( 105 ), ExtResource( 99 ), ExtResource( 108 ), ExtResource( 84 ), ExtResource( 114 ), ExtResource( 86 ), ExtResource( 97 ), ExtResource( 94 ), ExtResource( 109 ), ExtResource( 112 ), ExtResource( 96 ), ExtResource( 104 ), ExtResource( 116 ), ExtResource( 106 ), ExtResource( 107 ), ExtResource( 113 ), ExtResource( 98 ), ExtResource( 115 ), ExtResource( 100 ) ],
+"loop": false,
+"name": "JumpB",
+"speed": 20.0
+}, {
+"frames": [ ExtResource( 117 ), ExtResource( 92 ), ExtResource( 93 ), ExtResource( 95 ), ExtResource( 101 ), ExtResource( 102 ), ExtResource( 72 ), ExtResource( 71 ), ExtResource( 69 ), ExtResource( 73 ), ExtResource( 74 ), ExtResource( 75 ), ExtResource( 68 ), ExtResource( 76 ), ExtResource( 77 ), ExtResource( 81 ), ExtResource( 78 ), ExtResource( 79 ), ExtResource( 80 ), ExtResource( 82 ), ExtResource( 83 ), ExtResource( 70 ) ],
+"loop": false,
+"name": "JumpF",
+"speed": 20.0
+}, {
+"frames": [ ExtResource( 129 ), ExtResource( 130 ), ExtResource( 103 ), ExtResource( 131 ) ],
+"loop": false,
+"name": "Ken LightHit",
+"speed": 10.0
+}, {
+"frames": [ ExtResource( 121 ), ExtResource( 123 ), ExtResource( 119 ), ExtResource( 120 ), ExtResource( 124 ), ExtResource( 127 ), ExtResource( 125 ), ExtResource( 128 ), ExtResource( 122 ), ExtResource( 126 ) ],
+"loop": false,
+"name": "Ken_Crouch",
+"speed": 18.0
+}, {
+"frames": [ ExtResource( 11 ), ExtResource( 13 ), ExtResource( 1 ), ExtResource( 2 ), ExtResource( 32 ), ExtResource( 30 ) ],
+"loop": false,
+"name": "Light_kick",
+"speed": 20.0
+}, {
+"frames": [ ExtResource( 33 ), ExtResource( 31 ), ExtResource( 34 ), ExtResource( 22 ), ExtResource( 28 ) ],
+"loop": false,
+"name": "Light_punch",
+"speed": 20.0
+}, {
+"frames": [ ExtResource( 27 ), ExtResource( 35 ), ExtResource( 23 ), ExtResource( 19 ), ExtResource( 25 ), ExtResource( 20 ), ExtResource( 21 ), ExtResource( 24 ), ExtResource( 26 ) ],
+"loop": false,
+"name": "Medium_punch",
+"speed": 17.0
+}, {
+"frames": [ ExtResource( 29 ), ExtResource( 45 ), ExtResource( 36 ), ExtResource( 48 ), ExtResource( 39 ), ExtResource( 42 ), ExtResource( 43 ), ExtResource( 47 ), ExtResource( 49 ), ExtResource( 41 ), ExtResource( 51 ) ],
+"loop": true,
+"name": "WalkBackward",
+"speed": 18.0
+}, {
+"frames": [ ExtResource( 44 ), ExtResource( 50 ), ExtResource( 52 ), ExtResource( 37 ), ExtResource( 38 ), ExtResource( 46 ), ExtResource( 40 ), ExtResource( 15 ), ExtResource( 17 ), ExtResource( 18 ), ExtResource( 16 ) ],
+"loop": true,
+"name": "WalkForward",
+"speed": 18.0
+} ]
+
+[sub_resource type="RectangleShape2D" id=11]
+extents = Vector2( 30, 12 )
+
+[node name="Player1" type="KinematicBody2D" groups=["Player1"]]
+script = ExtResource( 53 )
+
+[node name="StateMachine" type="Node2D" parent="."]
+script = ExtResource( 132 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+visible = false
+position = Vector2( 0, 0.0351906 )
+shape = SubResource( 1 )
+
+[node name="HurtBoxes" type="Area2D" parent="." groups=["1MP"]]
+position = Vector2( 8, 0 )
+collision_layer = 2
+collision_mask = 2
+
+[node name="Body" type="CollisionShape2D" parent="HurtBoxes"]
+modulate = Color( 0.00784314, 1, 0, 1 )
+position = Vector2( -10, 0 )
+shape = SubResource( 9 )
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="."]
+frames = SubResource( 2 )
+animation = "Idle"
+frame = 4
+playing = true
+
+[node name="HitBoxes" type="Area2D" parent="." groups=["MP"]]
+position = Vector2( 72, 0 )
+collision_layer = 2
+collision_mask = 2
+
+[node name="Attack" type="CollisionShape2D" parent="HitBoxes"]
+position = Vector2( 0, -24 )
+shape = SubResource( 11 )
+disabled = true
+
+[connection signal="area_entered" from="HurtBoxes" to="." method="_on_HurtBoxes_area_entered"]
+[connection signal="animation_finished" from="AnimatedSprite" to="." method="_on_AnimatedSprite_animation_finished"]

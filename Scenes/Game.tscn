@@ -1,27 +1,15 @@
 [gd_scene load_steps=4 format=2]
 
 [ext_resource path="res://Scenes/Player2.tscn" type="PackedScene" id=1]
-[ext_resource path="res://Scenes/PlayerV2.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Scenes/Player1.tscn" type="PackedScene" id=2]
 [ext_resource path="res://Scenes/Stage.tscn" type="PackedScene" id=3]
 
 [node name="Game" type="Node2D"]
 
 [node name="Stage" parent="." instance=ExtResource( 3 )]
 
+[node name="Player1" parent="." instance=ExtResource( 2 )]
+position = Vector2( 350, 420 )
+
 [node name="Player2" parent="." instance=ExtResource( 1 )]
-position = Vector2( 756, 427 )
-
-[node name="AnimatedSprite" parent="Player2" index="2"]
-frame = 5
-
-[node name="Player" parent="." instance=ExtResource( 2 )]
-position = Vector2( 264, 430 )
-
-[node name="CollisionShape2D" parent="Player" index="0"]
-visible = true
-
-[node name="AnimatedSprite" parent="Player" index="2"]
-frame = 2
-
-[editable path="Player2"]
-[editable path="Player"]
+position = Vector2( 908, 415 )

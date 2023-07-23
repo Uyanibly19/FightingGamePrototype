@@ -1,0 +1,72 @@
+extends KinematicBody2D
+
+const UP_DIRECTION := Vector2.UP
+
+export var speed := 300.0
+
+export var jumpstrength := 1400.0
+export var maximum_jumps := 2
+export var double_jump_strength := 1000.0
+export var gravity := 4500.0
+
+onready var animatedSprite = $AnimatedSprite
+
+var isInCombo = false
+var isAttacking = false
+
+var timeTillNextInput = 0.5
+var time = 0
+
+var currentAttack = 0
+var previousAttack = 0
+
+var _jumps_made := 0
+var _velocity := Vector2.ZERO
+
+func _physics_process(delta: float) -> void:
+	var _horizontal_direction = (
+		Input.get_action_strength("right")
+		- Input.get_action_strength("left")
+	)
+	
+	_velocity.x = _horizontal_direction * speed
+	_velocity.y += gravity * delta
+	
+	var is_falling := _velocity.y > 0.0 and not is_on_floor()
+	var is_jumping := Input.is_action_just_pressed("up") and is_on_floor()
+	var is_idling := is_on_floor() and is_zero_approx(_velocity.x)
+	var is_running := is_on_floor() and not is_zero_approx(_velocity.x)
+	
+	if is_jumping:
+		_jumps_made += 0
+		_velocity.y = -jumpstrength
+	_velocity = move_and_slide(_velocity, UP_DIRECTION) 
+	
+
+func _ready():
+	time = timeTillNextInput
+
+func _process(delta):
+	if Input.is_action_pressed("right") && isAttacking == false:
+		animatedSprite.play("WalkForward")
+	elif Input.is_action_pressed("left") && isAttacking == false:
+		animatedSprite.play("WalkBackward")
+	else:
+		if isAttacking == false:
+			animatedSprite.play("Idle")
+	
+	if Input.is_action_just_pressed("MP"):
+		animatedSprite.play("Medium punch")
+		isAttacking = true
+		$HitBoxes/Attack.disabled = false
+
+func _on_HurtBoxes_area_entered(area):
+	if area.is_in_group("MP") && isAttacking:
+		animatedSprite.play("Ken LightHit")
+
+func _on_AnimatedSprite_animation_finished():
+	if animatedSprite.animation == "Medium punch":
+		$HitBoxes/Attack.disabled = true
+		isAttacking = false
+
+

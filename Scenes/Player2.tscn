@@ -1,4 +1,4 @@
-[gd_scene load_steps=136 format=2]
+[gd_scene load_steps=133 format=2]
 
 [ext_resource path="res://Ryu Sprites/Ryu Walk Backward/a2059362e57345eaec64321a17c621c5GyllOSWgMrHFm43T-0.png" type="Texture" id=1]
 [ext_resource path="res://Ryu Sprites/Ryu Walk Forward/7363f5e3ceb64333d352ff047b113aaaaeF9MEXu2qLoheh2-0.png" type="Texture" id=2]
@@ -128,19 +128,12 @@
 [ext_resource path="res://Ryu Sprites/RyuCrouch/11bd30272f3a4cfbfe564db52ea913d0KDXi9OtxcesSjnRV-5.png" type="Texture" id=126]
 [ext_resource path="res://Ryu Sprites/RyuCrouch/11bd30272f3a4cfbfe564db52ea913d0KDXi9OtxcesSjnRV-8.png" type="Texture" id=127]
 [ext_resource path="res://Ryu Sprites/RyuHit/b30182c3b40843a6a34d28d94f598ebcFtoRN1BYnW8nvIOx-0.png" type="Texture" id=128]
-[ext_resource path="res://Scripts/HurtBoxes.gd" type="Script" id=129]
 
 [sub_resource type="RectangleShape2D" id=8]
 extents = Vector2( 16, 48 )
 
-[sub_resource type="RectangleShape2D" id=7]
-extents = Vector2( 14.5, 12 )
-
 [sub_resource type="RectangleShape2D" id=9]
-extents = Vector2( 32, 21 )
-
-[sub_resource type="RectangleShape2D" id=10]
-extents = Vector2( 40, 28 )
+extents = Vector2( 40, 56 )
 
 [sub_resource type="SpriteFrames" id=2]
 animations = [ {
@@ -185,9 +178,9 @@ animations = [ {
 "speed": 18.0
 }, {
 "frames": [ ExtResource( 128 ), ExtResource( 76 ), ExtResource( 118 ), ExtResource( 121 ) ],
-"loop": true,
+"loop": false,
 "name": "Ryu LightHit",
-"speed": 5.0
+"speed": 10.0
 }, {
 "frames": [ ExtResource( 1 ), ExtResource( 16 ), ExtResource( 13 ), ExtResource( 18 ), ExtResource( 23 ), ExtResource( 3 ), ExtResource( 9 ), ExtResource( 11 ), ExtResource( 21 ), ExtResource( 19 ), ExtResource( 4 ) ],
 "loop": true,
@@ -201,44 +194,38 @@ animations = [ {
 } ]
 
 [sub_resource type="RectangleShape2D" id=11]
-extents = Vector2( 28, 56 )
+extents = Vector2( 30, 12 )
 
-[node name="Player2" type="KinematicBody2D"]
+[node name="Player2" type="KinematicBody2D" groups=["Player2"]]
 script = ExtResource( 52 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource( 8 )
 
 [node name="HurtBoxes" type="Area2D" parent="."]
-script = ExtResource( 129 )
-
-[node name="Head" type="CollisionShape2D" parent="HurtBoxes"]
-modulate = Color( 0.101961, 1, 0, 1 )
-position = Vector2( -8, -48 )
-shape = SubResource( 7 )
+position = Vector2( -8, 0 )
+collision_layer = 2
+collision_mask = 2
 
 [node name="Body" type="CollisionShape2D" parent="HurtBoxes"]
 modulate = Color( 0.101961, 1, 0, 1 )
-position = Vector2( 0, -16 )
+position = Vector2( 8, 0 )
 shape = SubResource( 9 )
-
-[node name="Legs" type="CollisionShape2D" parent="HurtBoxes"]
-modulate = Color( 0.101961, 1, 0, 1 )
-position = Vector2( 0, 28 )
-shape = SubResource( 10 )
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="."]
 frames = SubResource( 2 )
 animation = "Idle"
-frame = 6
+frame = 9
 playing = true
 flip_h = true
 
-[node name="HitBoxes" type="Area2D" parent="." groups=["P2Attack"]]
+[node name="HitBoxes" type="Area2D" parent="." groups=["MP"]]
+position = Vector2( -56, 0 )
+collision_layer = 2
+collision_mask = 2
 
 [node name="Attack" type="CollisionShape2D" parent="HitBoxes"]
-modulate = Color( 0.964706, 0, 0.678431, 1 )
-position = Vector2( -48, 0 )
+position = Vector2( -16, -28 )
 shape = SubResource( 11 )
 disabled = true
 

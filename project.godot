@@ -9,19 +9,37 @@
 config_version=4
 
 _global_script_classes=[ {
+"base": "",
+"class": "GitAPI",
+"language": "NativeScript",
+"path": "res://addons/godot-git-plugin/git_api.gdns"
+}, {
 "base": "Area2D",
 "class": "HitBox",
 "language": "GDScript",
 "path": "res://Scripts/HitBox.gd"
 }, {
+"base": "Area2D",
+"class": "HurtBoxes",
+"language": "GDScript",
+"path": "res://Scripts/HurtBoxes.gd"
+}, {
 "base": "Resource",
 "class": "PlayerControls",
 "language": "GDScript",
 "path": "res://Scripts/PlayerControls.gd"
+}, {
+"base": "Node",
+"class": "StateMachine",
+"language": "GDScript",
+"path": "res://StateMachine.gd"
 } ]
 _global_script_class_icons={
+"GitAPI": "",
 "HitBox": "",
-"PlayerControls": ""
+"HurtBoxes": "",
+"PlayerControls": "",
+"StateMachine": ""
 }
 
 [application]
@@ -32,6 +50,10 @@ run/main_scene="res://Scenes/Game.tscn"
 [autoload]
 
 MoveSetManager="*res://Scripts/MoveSetManager.gd"
+
+[gdnative]
+
+singletons=[ "res://addons/godot-git-plugin/git_api.gdnlib" ]
 
 [gui]
 
