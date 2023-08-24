@@ -25,6 +25,10 @@ var _velocity := Vector2.ZERO
 
 var vitalityHP = 100
 
+var frame = 0
+func updateframes(delta):
+	frame += 1
+
 func _physics_process(delta: float) -> void:
 	var _horizontal_direction = (
 		Input.get_action_strength("p2right")
@@ -46,33 +50,4 @@ func _physics_process(delta: float) -> void:
 
 func _ready():
 	time = timeTillNextInput
-
-func _process(delta):
-	if Input.is_action_pressed("p2left") && isAttacking == false:
-		$AnimatedSprite.play("Walk Forward")
-	elif Input.is_action_pressed("p2right") && isAttacking == false:
-		$AnimatedSprite.play("Walk Backward")
-	else:
-		if isAttacking == false:
-			$AnimatedSprite.play("Idle")
-	
-	if Input.is_action_just_pressed("p2MP"):
-		$AnimatedSprite.play("Medium Punch")
-		isAttacking = true
-		$HitBoxes/Attack.disabled = false
-
-func _on_HurtBoxes_area_entered(area):
-	if area.is_in_group("MP") && isAttacking:
-		animatedSprite.play("Ryu LightHit")
-
-func _on_AnimatedSprite_animation_finished():
-	if $AnimatedSprite.animation == "Medium Punch" && isAttacking:
-		$HitBoxes/Attack.disabled = true
-		isAttacking = false
-
-
-
-func take_damage():
-	pass
-
 

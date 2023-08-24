@@ -1,39 +1,54 @@
 extends Node
+
+signal transitioned(state_path)
+
 class_name StateMachine
 
-var state = null setget set_state
-var previous_state = null
-var states = {}
+export(NodePath) var initial_state := NodePath()
 
-onready var parent = get_parent()
+onready var _state: State = get_node(initial_state)
+
+func _init():
+	# make sure the node is always in the "state_machine" group
+	add_to_group("state_machine")
+
+func _ready():
+	# wait until the owner is ready
+	yield(owner, "ready")
+
+	# transition to the initial state
+	transition_to(initial_state)
+
+func _input(event):
+	# delegate the _input handling to the current state
+	_state.input(event)
+
+func _unhandled_input(event):
+	# delegate the _unhandled_input handling to the current state
+	_state.unhandled_input(event)
+
+func _process(delta):
+	# delegate the _process handling to the current state
+	_state.process(delta)
 
 func _physics_process(delta):
-	if state !=null:
-		state_logic(delta)
-		var transition = get_transition(delta)
-		if transition !=null:
-			set_state(transition)
+	# delegate the _physics_process handling to the current state
+	_state.physics_process(delta)
 
-func state_logic(delta):
-	pass
+func transition_to(state_path: NodePath):
+	# if there's no node at the specified path, don't do anything
+	if !has_node(state_path):
+		return
 
-func get_transition(delta):
-	return null
+	# get node at the given path
+	var new_state := get_node(state_path)
 
-func enter_state(new_state, old_state):
-	pass
+	# if we're already in the same state or if the node is not a State node, don't do anything
+	if new_state == _state || !(new_state is State):
+		return
 
-func exit_state(old_state, new_state):
-	pass
-
-func set_state(new_state):
-	previous_state = state
-	state = new_state
-	
-	if previous_state !=null:
-		exit_state(previous_state, new_state)
-	if new_state !=null:
-		enter_state(new_state, previous_state)
-
-func add_state(state_name):
-	states[state_name] = states.size()
+	# exit the current state, set the current to the new state and enter it, and emit transitioned signal
+	_state.exit()
+	_state = new_state
+	new_state.enter()
+	emit_signal("transitioned", state_path)

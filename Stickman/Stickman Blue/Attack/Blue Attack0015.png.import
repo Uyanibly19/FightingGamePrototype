@@ -2,11 +2,16 @@
 
 importer="texture"
 type="StreamTexture"
-valid=false
+path="res://.import/Blue Attack0015.png-817751c814d09da0900fc0c23bfe4906.stex"
+metadata={
+"vram_texture": false
+}
 
 [deps]
 
-source_file="res://Stickman/Blue.png"
+source_file="res://Stickman/Stickman Blue/Attack/Blue Attack0015.png"
+dest_files=[ "res://.import/Blue Attack0015.png-817751c814d09da0900fc0c23bfe4906.stex" ]
+
 [params]
 
 compress/mode=0

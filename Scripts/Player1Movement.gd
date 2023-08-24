@@ -1,5 +1,7 @@
 extends KinematicBody2D
 
+#class_name Player
+
 const UP_DIRECTION := Vector2.UP
 
 export var speed := 300.0
@@ -23,6 +25,15 @@ var previousAttack = 0
 var _jumps_made := 0
 var _velocity := Vector2.ZERO
 
+var vitalityHP = 100 
+
+var frame = 0
+func updateframes(delta):
+	frame += 1
+
+func frame():
+	frame = 0
+
 func _physics_process(delta: float) -> void:
 	var _horizontal_direction = (
 		Input.get_action_strength("right")
@@ -41,32 +52,10 @@ func _physics_process(delta: float) -> void:
 		_jumps_made += 0
 		_velocity.y = -jumpstrength
 	_velocity = move_and_slide(_velocity, UP_DIRECTION) 
-	
 
 func _ready():
 	time = timeTillNextInput
 
-func _process(delta):
-	if Input.is_action_pressed("right") && isAttacking == false:
-		animatedSprite.play("WalkForward")
-	elif Input.is_action_pressed("left") && isAttacking == false:
-		animatedSprite.play("WalkBackward")
-	else:
-		if isAttacking == false:
-			animatedSprite.play("Idle")
-	
-	if Input.is_action_just_pressed("MP"):
-		animatedSprite.play("Medium punch")
-		isAttacking = true
-		$HitBoxes/Attack.disabled = false
 
-func _on_HurtBoxes_area_entered(area):
-	if area.is_in_group("MP") && isAttacking:
-		animatedSprite.play("Ken LightHit")
-
-func _on_AnimatedSprite_animation_finished():
-	if animatedSprite.animation == "Medium punch":
-		$HitBoxes/Attack.disabled = true
-		isAttacking = false
 
 
