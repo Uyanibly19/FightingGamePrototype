@@ -11,3 +11,4 @@ func _ready():
 func _process(delta):
 	if Input.is_action_pressed("p2down") && isAttacking == false:
 		animated_sprite.play("RyuCrouch")
+#The animation for both P2 and P1 don't have a crouching animation.

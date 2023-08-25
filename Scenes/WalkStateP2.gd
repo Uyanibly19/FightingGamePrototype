@@ -17,3 +17,4 @@ func _process(delta):
 		animated_sprite.play("Red Walking")
 
 # When I press left or right the character moves and plays the animation.
+# Note the jump animation doesn't work

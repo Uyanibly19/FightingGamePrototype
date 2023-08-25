@@ -1,9 +1,11 @@
 extends KinematicBody2D
 
 #class_name Player
-
+# This is the final script for Player 1
 const UP_DIRECTION := Vector2.UP
 
+
+#This is how fast the charcter should be.
 export var speed := 300.0
 
 export var jumpstrength := 1400.0
@@ -39,7 +41,7 @@ func _physics_process(delta: float) -> void:
 		Input.get_action_strength("right")
 		- Input.get_action_strength("left")
 	)
-	
+	# Pressing these inputs make the character move left and right.
 	_velocity.x = _horizontal_direction * speed
 	_velocity.y += gravity * delta
 	
@@ -53,6 +55,7 @@ func _physics_process(delta: float) -> void:
 		_velocity.y = -jumpstrength
 	_velocity = move_and_slide(_velocity, UP_DIRECTION) 
 
+# Pressing up make the character jump. 
 func _ready():
 	time = timeTillNextInput
 

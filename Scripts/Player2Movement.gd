@@ -1,7 +1,9 @@
 extends KinematicBody2D
+#This is the final script for PLayer 2 
 
 const UP_DIRECTION := Vector2.UP
 
+#This is how fast the charcter should be.
 export var speed := 300.0
 
 export var jumpstrength := 1400.0
@@ -34,6 +36,7 @@ func _physics_process(delta: float) -> void:
 		Input.get_action_strength("p2right")
 		- Input.get_action_strength("p2left")
 	)
+	# Pressing the input (left and right) make the character move left and right.
 	
 	_velocity.x = _horizontal_direction * speed
 	_velocity.y += gravity * delta
@@ -48,6 +51,7 @@ func _physics_process(delta: float) -> void:
 		_velocity.y = -jumpstrength
 	_velocity = move_and_slide(_velocity, UP_DIRECTION) 
 
+# Pressing the input (up) makes the character jump. 
 func _ready():
 	time = timeTillNextInput
 

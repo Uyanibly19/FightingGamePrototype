@@ -10,4 +10,6 @@ func _ready():
 
 func _process(delta):
 	if Input.is_action_pressed("down") && isAttacking == false:
-		animated_sprite.play("Ken_Crouch")
+		# animated_sprite.play("Ken_Crouch")
+		pass
+# Crouching animation doesn't exist yet.

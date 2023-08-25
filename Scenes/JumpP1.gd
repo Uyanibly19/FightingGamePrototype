@@ -14,3 +14,4 @@ func _process(delta):
 		#animated_sprite.play("KenJump")
 		pass
 # This script is showing that if they press "up" the character jumps and plays the animation jump.
+# Note the jump animation doesn't work

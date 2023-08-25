@@ -133,7 +133,7 @@ position = Vector2( 5, 21 )
 scale = Vector2( 0.0563542, 0.0563542 )
 frames = SubResource( 2 )
 animation = "Blue Idle"
-frame = 6
+frame = 1
 playing = true
 
 [node name="HitBoxes" type="Area2D" parent="." groups=["P1Attack"]]
